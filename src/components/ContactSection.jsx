@@ -54,7 +54,7 @@ export default function ContactSection({ ref }) {
         config.emailJsPublicKey,
       );
 
-      // alert("Consultation request sent successfully!");
+      // alert("Contact request sent successfully!");
       toast.success("We got your message, we will reach out to you soon! 😊", {
         position: "top-center"
       });

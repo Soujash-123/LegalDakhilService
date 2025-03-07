@@ -16,14 +16,22 @@ export default function Navbar({ scrollToSection, refs }) {
 
   return (
     <header className="bg-white py-4 flex items-center justify-between shadow-md sticky top-0 z-50">
-      <div className="container mx-auto px-4 flex items-center justify-evenly">
-        <a href="#" className="flex items-center">
-          <span className="text-2xl font-bold">
-            <span className="text-[#ff9d3a]">Legal</span>
-            <span className="text-[#138808]">Dakhil</span>
-            <span className="text-[#4b0082]">Services</span>
-          </span>
-        </a>
+      <div className="container px-8 lg:px-18 flex items-center justify-between">
+        <div className="flex items-center space-x-4">
+          <div className=" bg-gradient-to-br from-orange-600 via-white to-green-600 border border-purple-600 rounded-full flex items-center justify-center">
+            <img src="/img/logo.png" alt="logo" className="h-10 w-10" />
+          </div>
+          <a
+            onClick={() => scrollToSection(refs.homeRef)}
+            className="flex items-center cursor-pointer"
+          >
+            <span className="text-2xl font-bold">
+              <span className="text-[#ff9d3a]">Legal</span>
+              <span className="text-[#138808]">Dakhil</span>
+              <span className="text-[#4b0082]">Services</span>
+            </span>
+          </a>
+        </div>
 
         <nav className="hidden md:flex items-center space-x-6">
           {menuItems.map((item) => (

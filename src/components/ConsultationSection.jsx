@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { Shield, Clock, Users, FileText, ArrowRight } from "lucide-react";
 import { Button, Input, TextArea, Select, Checkbox } from "./ui";
+import { config } from "../config/config";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function ConsultationSection({ ref }) {
   const [formData, setFormData] = useState({
@@ -15,6 +19,7 @@ export default function ConsultationSection({ ref }) {
 
   const [file, setFile] = useState(null);
   const [isDragging, setIsDragging] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -53,10 +58,56 @@ export default function ConsultationSection({ ref }) {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // Handle form submission
     console.log(formData, file);
+
+    const templateParams = {
+      full_name: formData.fullName,
+      email_address: formData.email,
+      phone_number: formData.phone,
+      city: formData.city,
+      service_type: formData.serviceType,
+      additional_details: formData.details,
+      to_email: config.emailJsAdminEmail,
+    };
+
+    try {
+      setLoading(true);
+      // Send email using Email.js
+
+      await emailjs.send(
+        config.emailJsServiceId2,
+        config.emailJsTemplateId2,
+        templateParams,
+        config.emailJsPublicKey2
+      );
+
+      // alert("Consultation request sent successfully!");
+      toast.success(
+        "Consultation request sent successfully!, We will reach out to you soon! ✌️",
+        {
+          position: "top-center",
+        }
+      );
+
+      // Reset form
+      setFormData({
+        fullName: "",
+        email: "",
+        phone: "",
+        city: "",
+        serviceType: "",
+        details: "",
+        agreeToTerms: false,
+      });
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert("Failed to send consultation request");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const benefits = [
@@ -252,10 +303,17 @@ export default function ConsultationSection({ ref }) {
 
               <Button
                 type="submit"
-                className="w-full bg-purple-800 hover:bg-purple-900 text-white"
+                className="w-full bg-purple-800 hover:bg-purple-900 text-white cursor-pointer"
+                disabled={loading}
               >
-                Submit Consultation Request{" "}
-                <ArrowRight className="ml-2 h-4 w-4" />
+                {loading ? (
+                  "Submitting..."
+                ) : (
+                  <>
+                    {"Submit Consultation Request "}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </>
+                )}
               </Button>
             </form>
           </div>
