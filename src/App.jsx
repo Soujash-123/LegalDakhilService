@@ -61,7 +61,7 @@ export default function App() {
         <Navbar scrollToSection={scrollToSection} refs={{ homeRef, servicesRef, consultationRef, updatesRef, aboutRef, faqRef, contactRef, testimonialsRef }}/>
         <Home refs={{ homeRef, servicesRef, consultationRef }} scrollToSection={scrollToSection} />
         <ScrollBar />
-        <ServicesSection ref={servicesRef}/>
+        <ServicesSection refs={{ servicesRef, consultationRef }} scrollToSection={scrollToSection}/>
         <TestimonialSection ref={testimonialsRef}/>
         <ConsultationSection ref={consultationRef}/>
         <UpdatesSection ref={updatesRef}/>

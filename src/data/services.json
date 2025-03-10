@@ -1,0 +1,165 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "name": "Startup & Business Compliance",
+            "description": [
+                {
+                    "contentName": "Startup Compliance",
+                    "content": [
+                        "Company registration under companies act 2013 (if applicable).",
+                        "GST registration & filing.",
+                        "Msme registraion (if applicable).",
+                        "FSSAI license (if applicable).",
+                        "IP registration.",
+                        "Tax compliance.",
+                        "Import/ export compliance (if applicable).",
+                        "Other license (any special lincese for specific state).",
+                        "Agreement and franchise (if applicable).",
+                        "Dedicated manager for your business. (legal advice/paperwork).",
+                        "Customer support.",
+                        "Software for book and account maintainence.",
+                        "Legal dispute handling."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Insurance Claim & Settlement",
+            "description": [
+                {
+                    "contentName": "Insurance Claim",
+                    "content": [
+                        "Health Insurance Claim.",
+                        "Vehicle Insurance Claim.",
+                        "Life Insurance Claim.",
+                        "Homeowner/Property Damaged Insurance Claim.",
+                        "Property Insurance Claim."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Trademarks & Copyrights",
+            "description": [
+                {
+                    "contentName": "Trademark",
+                    "content": [
+                        "Trademark Registration",
+                        "Trademark Objection",
+                        "Trademark Certificate",
+                        "Trademark Opposition",
+                        "Trademark Hearing",
+                        "Trademark Rectification",
+                        "TM Infringement Notice",
+                        "Trademark Renewal",
+                        "Trademark Transfer",
+                        "Expedited TM Registration",
+                        "USA Trademark Registration",
+                        "International Trademark",
+                        "Logo Designing",
+                        "Design Registration",
+                        "Design Objection",
+                        "Copyright Registration",
+                        "Copyright Objection"
+                    ]
+                },
+                {
+                    "contentName": "Copyrights",
+                    "content": [
+                        "Patent Registration",
+                        "Copyright Registration",
+                        "Copyright Objection",
+                        "Patent Registration"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Agreements And Legal Documentation Review",
+            "description": [
+                {
+                    "contentName": "Agreements",
+                    "content": [
+                        "Business Agreement.",
+                        "MOU",
+                        "Franchise Agreement.",
+                        "Property Transfer Agreement.",
+                        "Family Dispute Agreement.",
+                        "Intellectual Property Agreement.",
+                        "Technology & Software Agreement.",
+                        "Real Estate and Property Agreement.",
+                        "Marketing & Advertisement Agreement.",
+                        "Service and Provider Contracts.",
+                        "SAAS AGREEMENT"
+                    ]
+                },
+                {
+                    "contentName": "Types of business contracts",
+                    "content": [
+                        "Sales and purchase contracts",
+                        "Service and provider contracts",
+                        "Employer and worker contracts",
+                        "Lease and rental contracts",
+                        "Partnership and ownership contracts",
+                        "Financial contracts",
+                        "Licensing and intellectual property contracts",
+                        "Technology and software contracts",
+                        "Real estate and property contracts",
+                        "Marketing and advertising contracts"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "GST Compliance Services",
+            "description": [
+                {
+                    "contentName": "GST Registration",
+                    "content": [
+                        "GST Registration",
+                        "GST Return Filing by Accountant",
+                        "GST Annual Return Filing (GSTR-9)",
+                        "GST E-Invoicing Software",
+                        "GST LUT Form",
+                        "GST Notice",
+                        "GST Registration for Foreigners",
+                        "GST Invoicing & Filing Software",
+                        "GST Amendment",
+                        "GST Revocation",
+                        "GSTR-10",
+                        "GST Software for Accountants"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Income Tax Services",
+            "description": [
+                {
+                    "contentName": "Income Tax E-Filing",
+                    "content": [
+                        "Income Tax E-Filing",
+                        "Business Tax Filing",
+                        "ITR-1 Return Filing",
+                        "ITR-2 Return Filing",
+                        "ITR-3 Return Filing",
+                        "ITR-4 Return Filing",
+                        "ITR-5 Return Filing",
+                        "ITR-6 Return Filing",
+                        "ITR-7 Return Filing",
+                        "15CA - 15CB Filing",
+                        "TAN Registration",
+                        "TDS Return Filing",
+                        "Income Tax Notice"
+                    ]
+                }
+            ]
+        }
+    ]
+}
