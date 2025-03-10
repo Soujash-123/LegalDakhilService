@@ -1,6 +1,8 @@
+import { Menu, X } from "lucide-react";
 import { Button } from "./ui";
 
-import React from "react";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar({ scrollToSection, refs }) {
   const menuItems = [
@@ -14,9 +16,19 @@ export default function Navbar({ scrollToSection, refs }) {
     { name: "Contact", ref: refs.contactRef },
   ];
 
+  const [openNav, setOpenNav] = useState(false);
+
+  const handleNavClick = (ref) => {
+    scrollToSection(ref);
+
+    setTimeout(() => {
+      setOpenNav(false);
+    }, 1000);
+  }
+
   return (
-    <header className="bg-white py-4 flex items-center justify-between shadow-md sticky top-0 z-50">
-      <div className="container px-8 lg:px-18 flex items-center justify-between">
+    <header className="bg-white py-4 flex flex-col items-center justify-between shadow-md sticky top-0 z-50">
+      <div className="w-full px-8 lg:px-18 flex items-center justify-between">
         <div className="flex items-center space-x-4">
           <div className=" bg-gradient-to-br from-orange-600 via-white to-green-600 border border-purple-600 rounded-full flex items-center justify-center">
             <img src="/img/logo.png" alt="logo" className="h-10 w-10" />
@@ -33,7 +45,7 @@ export default function Navbar({ scrollToSection, refs }) {
           </a>
         </div>
 
-        <nav className="hidden md:flex items-center space-x-6">
+        <nav className="hidden lg:flex items-center space-x-6">
           {menuItems.map((item) => (
             <div key={item.name} className="flex items-center flex-col group">
               <div
@@ -45,27 +57,80 @@ export default function Navbar({ scrollToSection, refs }) {
               <div className="w-0 h-[2px] bg-orange-500 transition-all duration-300 group-hover:w-full"></div>
             </div>
           ))}
+          <div className="flex items-center space-x-2">
+            <Button
+              variant="outline"
+              className="hidden lg:flex text-black hover:bg-gray-200 cursor-pointer"
+            >
+              <div className="font-bold text-gray-500">Login</div>
+            </Button>
+            <Button
+              variant="ghost"
+              className="hidden lg:flex bg-[#181e38] hover:opacity-80 cursor-pointer"
+            >
+              <div className="font-bold text-gray-200 hover:text-white">
+                Sign Up
+              </div>
+            </Button>
+          </div>
         </nav>
 
-        <Button variant="ghost" className="md:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="lucide lucide-menu"
-          >
-            <line x1="4" x2="20" y1="12" y2="12"></line>
-            <line x1="4" x2="20" y1="6" y2="6"></line>
-            <line x1="4" x2="20" y1="18" y2="18"></line>
-          </svg>
+        <Button
+          variant="ghost"
+          className="lg:hidden text-black hover:bg-gray-200 cursor-pointer"
+          onClick={() => setOpenNav(!openNav)}
+        >
+          {openNav ? (
+            <X size={24} className="text-gray-500" />
+          ) : (
+            <Menu size={24} className="text-gray-500" />
+          )}
         </Button>
       </div>
+      <AnimatePresence>
+        {openNav && (
+          <motion.div 
+            className="lg:hidden mt-4 w-full bg-white flex items-center justify-baseline pl-10"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          > 
+            <motion.nav 
+              className="flex flex-col w-full"
+              initial={{ y: -20 }}
+              animate={{ y: 0 }}
+              transition={{ delay: 0.1, staggerChildren: 0.1 }}
+            > 
+              {menuItems.map((item, index) => ( 
+                <motion.div 
+                  key={item.name} 
+                  className="text-lg font-bold text-gray-500 hover:text-orange-600 hover:bg-gray-300 cursor-pointer rounded-xl p-2" 
+                  onClick={() => handleNavClick(item.ref)}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.1 + (index * 0.1) }}
+                > 
+                  {item.name} 
+                </motion.div> 
+              ))} 
+              <motion.div 
+                className="flex items-center space-x-2 mt-2"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+              > 
+                <Button variant="outline" className="text-black hover:bg-gray-200 cursor-pointer"> 
+                  <div className="font-bold text-gray-500">Login</div> 
+                </Button> 
+                <Button variant="ghost" className="bg-[#181e38] hover:opacity-80 cursor-pointer"> 
+                  <div className="font-bold text-gray-200 hover:text-white">Sign Up</div> 
+                </Button> 
+              </motion.div> 
+            </motion.nav> 
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

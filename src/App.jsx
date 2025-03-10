@@ -59,7 +59,7 @@ export default function App() {
     <ThemeProvider defaultTheme="light" storageKey="ui-theme">
       <div className="min-h-screen bg-white text-white relative">
         <Navbar scrollToSection={scrollToSection} refs={{ homeRef, servicesRef, consultationRef, updatesRef, aboutRef, faqRef, contactRef, testimonialsRef }}/>
-        <Home ref={homeRef}/>
+        <Home refs={{ homeRef, servicesRef, consultationRef }} scrollToSection={scrollToSection} />
         <ScrollBar />
         <ServicesSection ref={servicesRef}/>
         <TestimonialSection ref={testimonialsRef}/>

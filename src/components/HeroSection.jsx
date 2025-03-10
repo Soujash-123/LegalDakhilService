@@ -3,7 +3,7 @@ import { Button, Badge } from "./ui";
 
 import React from "react";
 
-export default function HeroSection() {
+export default function HeroSection({ scrollToSection, refs }) {
   return (
     <div className="space-y-6">
       <Badge
@@ -32,19 +32,22 @@ export default function HeroSection() {
       </p>
 
       <div className="flex flex-wrap gap-8 pt-4">
-        <Button className="relative group">
+        <button className="relative group"
+          onClick={() => scrollToSection(refs.consultationRef)}
+        >
         {/* Gradient glow effect (positioned behind the button) */}
         <div className="absolute inset-0 rounded-md bg-gradient-to-r from-emerald-500 to-amber-500 opacity-75 blur-md transition-all duration-300 group-hover:opacity-100"></div>
         
         {/* Main button with dark background */}
-        <div className="relative px-8 py-3 bg-gray-800 rounded-md text-white font-medium flex items-center justify-between">
+        <div className="relative px-8 py-3 bg-gray-800 rounded-md text-white font-medium flex items-center justify-between cursor-pointer">
           <span>Schedule Consultation</span>
           <ArrowRight className="h-4 w-4 ml-2" />
         </div>
-      </Button>
+      </button>
         <Button
           variant="outline"
-          className="text-white border-gray-600 hover:bg-gray-800 rounded-md px-6 py-5"
+          className="text-white border-gray-600 hover:bg-gray-800 rounded-md px-6 py-5 cursor-pointer"
+          onClick={() => scrollToSection(refs.servicesRef)}
         >
           Explore Services <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
