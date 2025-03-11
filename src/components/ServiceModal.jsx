@@ -10,7 +10,7 @@ const Modal = ({ isOpen, onClose, title, children }) => {
         <>
           {/* Backdrop with blur effect */}
           <motion.div
-            className="fixed inset-0 backdrop-blur-md bg-opacity-20 z-50 flex items-center justify-center p-4"
+            className="fixed inset-0 backdrop-blur-md bg-opacity-20 z-50 flex items-center justify-center p-4 mr-4"
             initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
             animate={{ opacity: 1, backdropFilter: "blur(8px)" }}
             exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
@@ -38,16 +38,8 @@ const Modal = ({ isOpen, onClose, title, children }) => {
               </div>
 
               {/* Content */}
-              <div className="p-6 max-h-[70vh] overflow-y-auto">{children}</div>
-
-              {/* Footer */}
-              <div className="p-6 flex justify-end space-x-3 bg-gray-50">
-                <button
-                  onClick={onClose}
-                  className="px-5 py-2.5 bg-gray-200 rounded-lg hover:bg-gray-300 transition-colors font-medium text-gray-700 cursor-pointer"
-                >
-                  Close
-                </button>
+              <div className="p-6 max-h-[70vh] overflow-y-auto mb-6">
+                {children}
               </div>
             </motion.div>
           </motion.div>
@@ -101,7 +93,15 @@ export default function ServiceModal({ data }) {
                     <div className="bg-green-100 p-1 rounded-full mt-0.5 mr-3 flex-shrink-0">
                       <ScrollText className="h-6 w-6 text-green-600" />
                     </div>
-                    <span className="text-gray-700">{content}</span>
+                    <a
+                      href={content.link}
+                      rel="noopener noreferrer"
+                      className="text-gray-700 hover:underline cursor-pointer"
+                      type="application/pdf"
+                      target="_blank"
+                    >
+                      {content.name}
+                    </a>
                   </motion.li>
                 ))}
               </ul>
