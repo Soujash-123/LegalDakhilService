@@ -150,7 +150,7 @@ export default function ConsultationSection({ ref }) {
       <div className="w-full mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-extrabold mb-4">
-            Book a <span className="text-purple-800">Consultation</span>
+            General <span className="text-purple-800">Consultation</span>
           </h2>
           <hr className="w-24 h-[3px] rounded-3xl bg-amber-500 mx-auto mb-8 border-none" />
           <p className="text-gray-600 max-w-2xl mx-auto">
@@ -310,7 +310,7 @@ export default function ConsultationSection({ ref }) {
                   "Submitting..."
                 ) : (
                   <>
-                    {"Submit Consultation Request "}
+                    {"Submit General Consultation"}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </>
                 )}

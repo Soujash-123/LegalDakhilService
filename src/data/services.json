@@ -1,0 +1,146 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "name": "Startup & Business Compliance",
+            "description": [
+                {
+                    "contentName": "Startup Compliance",
+                    "content": [
+                        {"name": "Company registration under companies act 2013 (if applicable).", "link": "/docs/StartUp/CompanyRegistration.pdf"},
+                        {"name": "GST registration & filing.", "link": "/docs/GST/GSTRegistration.pdf"},
+                        {"name": "MSME registraion (if applicable).", "link": "/docs/StartUp/MSMERegistration.pdf"},
+                        {"name": "FSSAI license (if applicable).", "link": "/docs/StartUp/FSSAILicense.pdf"},
+                        {"name": "Import/export compliance (if applicable).", "link": "/docs/StartUp/Import&ExportCompliance.pdf"}
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Insurance Claim & Settlement",
+            "description": [
+                {
+                    "contentName": "Insurance Claim",
+                    "content": [
+                        {"name": "Health Insurance Claim.", "link": "/docs/Insurance/HealthInsuranceClaims.pdf"},
+                        {"name": "Vehicle Insurance Claim.", "link": "/docs/Insurance/VehicleInsuranceClaims.pdf"},
+                        {"name": "Life Insurance Claim.", "link": "/docs/Insurance/LifeInsuranceClaims.pdf"},
+                        {"name": "Homeowner/Property Damaged Insurance Claim.", "link": "/docs/Insurance/Homeowner&PropertyDamageInsuranceClaims.pdf"}
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Trademarks & Copyrights",
+            "description": [
+                {
+                    "contentName": "Trademark",
+                    "content": [
+                        {"name": "Trademark Registration", "link": "/docs/Trademark/TrademarkRegistration.pdf"},
+                        {"name": "Trademark Objection", "link": "/docs/Trademark/TrademarkObjection.pdf"},
+                        {"name": "Trademark Certificate", "link": "/docs/Trademark/TrademarkCertificate.pdf"},
+                        {"name": "Trademark Opposition", "link": "/docs/Trademark/TrademarkOpposition.pdf"},
+                        {"name": "Trademark Hearing", "link": "/docs/Trademark/TrademarkHearing.pdf"},
+                        {"name": "Trademark Rectification", "link": "/docs/Trademark/TrademarkRectification.pdf"},
+                        {"name": "TM Infringement Notice", "link": "/docs/Trademark/TrademarkInfringementNotice.pdf"},
+                        {"name": "Trademark Renewal", "link": "/docs/Trademark/TrademarkRenewal.pdf"},
+                        {"name": "Trademark Transfer", "link": "/docs/Trademark/TrademarkTransfer.pdf"},
+                        {"name": "Expedited TM Registration", "link": "/docs/Trademark/ExpeditedTMRegistration.pdf"},
+                        {"name": "USA Trademark Registration", "link": "/docs/Trademark/USATrademarkRegistration.pdf"},
+                        {"name": "International Trademark", "link": "/docs/Trademark/InternationalTrademark.pdf"},
+                        {"name": "Design Registration", "link": "/docs/Trademark/DesignRegistration.pdf"},
+                        {"name": "Design Objection", "link": "/docs/Trademark/DesignObjection.pdf"}
+                        
+                    ]
+                },
+                {
+                    "contentName": "Copyrights",
+                    "content": [
+                        {"name": "Patent Registration", "link": "/docs/Copyright/PatentRegistration.pdf"},
+                        {"name": "Copyright Registration", "link": "/docs/Copyright/CopyrightRegistration.pdf"},
+                        {"name": "Copyright Objection", "link": "/docs/Copyright/CopyrightObjection.pdf"}
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Agreements And Legal Documentation Review",
+            "description": [
+                {
+                    "contentName": "Agreements",
+                    "content": [
+                        {"name": "Business Agreement.", "link": "/docs/Agreement/BusinessAgreement.pdf"},
+                        {"name": "MOU", "link": "/docs/Agreement/MOU.pdf"},
+                        {"name": "Franchise Agreement.", "link": "/docs/Agreement/FranchiseAgreement.pdf"},
+                        {"name": "Property Transfer Agreement.", "link": "/docs/Agreement/PropertyTransferAgreement.pdf"},
+                        {"name": "Family Dispute Agreement.", "link": "/docs/Agreement/FamilyDisputeAgreement.pdf"},
+                        {"name": "Intellectual Property Agreement.", "link": "/docs/Agreement/IntellectualPropertyAgreement.pdf"},
+                        {"name": "Technology & Software Agreement.", "link": "/docs/Agreement/Technology&SoftwareAgreement.pdf"},
+                        {"name": "Real Estate and Property Agreement.", "link": "/docs/Agreement/RealEstate&PropertyAgreement.pdf"},
+                        {"name": "Marketing & Advertisement Agreement.", "link": "/docs/Agreement/Marketing&AdvertisementAgreement.pdf"}
+                    ]
+                },
+                {
+                    "contentName": "Types of business contracts",
+                    "content": [
+                        {"name": "Sales and purchase contracts", "link": "/docs/Contract/Sales&PurchaseContracts.pdf"},
+                        {"name": "Service and provider contracts", "link": "/docs/Contract/Service&ProviderContracts.pdf"},
+                        {"name": "Employer and worker contracts", "link": "/docs/Contract/Employer&WorkerContracts.pdf"},
+                        {"name": "Partnership and ownership contracts", "link": "/docs/Contract/Partnership&OwnershipContracts.pdf"},
+                        {"name": "Financial contracts", "link": "/docs/Contract/FinancialContracts.pdf"},
+                        {"name": "Licensing and intellectual property contracts", "link": "/docs/Contract/Licensing&IntellectualPropertyContracts.pdf"}
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "GST Compliance Services",
+            "description": [
+                {
+                    "contentName": "GST Registration",
+                    "content": [
+                        {"name": "GST Registration", "link": "/docs/GST/GSTRegistration.pdf"},
+                        {"name": "GST Return Filing by Accountant", "link": "/docs/GST/GSTReturnFilingByAccountant.pdf"},
+                        {"name": "GST Annual Return Filing (GSTR-9)", "link": "/docs/GST/GSTAnnualReturnFiling.pdf"},
+                        {"name": "GST E-Invoicing Software", "link": "/docs/GST/GST-InvoicingSoftware&FilingSoftware.pdf"},
+                        {"name": "GST LUT Form", "link": "/docs/GST/GSTLUTForm.pdf"},
+                        {"name": "GST Notice", "link": "/docs/GST/GSTNotice.pdf"},
+                        {"name": "GST Invoicing & Filing Software", "link": "/docs/GST/GSTInvoicing.pdf"},
+                        {"name": "GST Amendment", "link": "/docs/GST/GSTAmendment.pdf"},
+                        {"name": "GST Revocation", "link": "/docs/GST/GSTRevocation.pdf"},
+                        {"name": "GSTR-10", "link": "/docs/GST/GSTR-10.pdf"},
+                        {"name": "GST Software for Accountants", "link": "/docs/GST/GSTSoftwareforAccountants.pdf"}
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Income Tax Services",
+            "description": [
+                {
+                    "contentName": "Income Tax E-Filing",
+                    "content": [
+                        {"name": "Income Tax E-Filing", "link": "/docs/IT/IncomeTaxE-Filing.pdf"},
+                        {"name": "Business Tax Filing", "link": "/docs/IT/BusinessTaxFiling.pdf"},
+                        {"name": "ITR-1 Return Filing", "link": "/docs/IT/ITR-1ReturnFiling.pdf"},
+                        {"name": "ITR-2 Return Filing", "link": "/docs/IT/ITR-2ReturnFiling.pdf"},
+                        {"name": "ITR-3 Return Filing", "link": "/docs/IT/ITR-3ReturnFiling.pdf"},
+                        {"name": "ITR-4 Return Filing", "link": "/docs/IT/ITR-4ReturnFiling.pdf"},
+                        {"name": "ITR-5 Return Filing", "link": "/docs/IT/ITR-5ReturnFiling.pdf"},
+                        {"name": "ITR-6 Return Filing", "link": "/docs/IT/ITR-6ReturnFiling.pdf"},
+                        {"name": "ITR-7 Return Filing", "link": "/docs/IT/ITR-7ReturnFiling.pdf"},
+                        {"name": "15CA - 15CB Filing", "link": "/docs/IT/15CA-15CBFiling.pdf"},
+                        {"name": "TAN Registration", "link": "/docs/IT/TANRegistration.pdf"},
+                        {"name": "TDS Return Filing", "link": "/docs/IT/TDSReturnFiling.pdf"},
+                        {"name": "Income Tax Notice", "link": "/docs/IT/IncomeTaxNotice.pdf"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

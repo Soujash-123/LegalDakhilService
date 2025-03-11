@@ -13,8 +13,10 @@ import {
   Phone,
 } from "lucide-react";
 import { Button } from "./ui";
+import servicesData from "../data/services.json";
+import { ServiceModal } from "../components";
 
-const ServiceCard = ({ icon, color, title, items }) => {
+const ServiceCard = ({ icon, color, title, items, data }) => {
   return (
     <div
       className="bg-white rounded-lg shadow-md border-t-4"
@@ -36,12 +38,7 @@ const ServiceCard = ({ icon, color, title, items }) => {
             </li>
           ))}
         </ul>
-        <Button
-          variant="link"
-          className="text-purple-700 h-auto font-medium"
-        >
-          Get Assistance <ArrowRight className="ml-1 h-4 w-4" />
-        </Button>
+        <ServiceModal data={data} />
       </div>
     </div>
   );
@@ -59,50 +56,61 @@ const BenefitCard = ({ icon, title, description }) => {
   );
 };
 
-export default function ServicesSection({ ref }) {
+export default function ServicesSection({ refs, scrollToSection }) {
   const services = [
-    {
-      icon: <Shield className="h-6 w-6 text-orange-500" />,
-      color: "#FFA500",
-      title: "Insurance Claims",
-      items: [
-        "Health Insurance Claim",
-        "Death Insurance Claim",
-        "Vehicle Insurance Claim",
-        "Other Insurance Claims",
-      ],
-    },
     {
       icon: <Building className="h-6 w-6 text-green-500" />,
       color: "#22C55E",
-      title: "Startup & Company Registration",
+      title: "Startup & Business Compliance",
       items: [
-        "Proprietorship",
-        "Partnership",
-        "Private Limited Company",
-        "Limited Liability Partnership",
+        "Gst registration & filing",
+        "Ip registration",
+        "Tax compliance.",
+        "Import/ export compliance (if applicable)",
+      ],
+    },
+    {
+      icon: <Shield className="h-6 w-6 text-orange-500" />,
+      color: "#FFA500",
+      title: "Insurance Claims & Settlement",
+      items: [
+        "Health Insurance Claim",
+        "Vehicle Insurance Claim",
+        "Life Insurance Claim",
+        "Homeowner/Property Damage Insurance Claim",
       ],
     },
     {
       icon: <Landmark className="h-6 w-6 text-purple-500" />,
       color: "#A855F7",
-      title: "Trademark & Intellectual Property",
+      title: "Trademark & Copyrights",
       items: [
         "Trademark Registration",
         "Trademark Objection",
         "Copyright Registration",
-        "Design Registration",
+        "Patent Registration",
+      ],
+    },
+    {
+      icon: <Scale className="h-6 w-6 text-purple-500" />,
+      color: "#A855F7",
+      title: "Agreements And Legal Documentation Review",
+      items: [
+        "Business Agreement",
+        "Franchise Agreement.",
+        "Property Transfer Agreement",
+        "Marketing & Advertisement Agreement",
       ],
     },
     {
       icon: <FileText className="h-6 w-6 text-orange-500" />,
       color: "#FFA500",
-      title: "Goods & Services Tax (GST)",
+      title: "GST Compliance Services",
       items: [
-        "GST Registration",
-        "GST Return Filing",
-        "GST Annual Return Filing",
-        "GST Notice Handling",
+        "GST Return Filing by Accountant",
+        "GST Annual Return Filing (GSTR-9)",
+        "GST E-Invoicing Software",
+        "GST Notice",
       ],
     },
     {
@@ -110,21 +118,10 @@ export default function ServicesSection({ ref }) {
       color: "#22C55E",
       title: "Income Tax Services",
       items: [
-        "Income Tax E-Filing",
         "Business Tax Filing",
+        "ITR-1 to ITR-7 Return Filing",
         "TDS Return Filing",
         "Income Tax Notice",
-      ],
-    },
-    {
-      icon: <Scale className="h-6 w-6 text-purple-500" />,
-      color: "#A855F7",
-      title: "Legal Consultancy",
-      items: [
-        "Divorce Matters",
-        "Family Disputes",
-        "General Legal Advice",
-        "Legal Documentation",
       ],
     },
   ];
@@ -156,13 +153,13 @@ export default function ServicesSection({ ref }) {
   ];
 
   return (
-    <section ref={ref} className="py-16 bg-gray-50">
+    <section ref={refs.servicesRef} className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <div className="text-4xl font-extrabold text-purple-900 mb-4">
             Our Legal Services
           </div>
-            <hr className="w-24 h-[5px] rounded-3xl bg-gradient-to-r from-orange-500 via-white to-green-500 mx-auto mb-8" />
+          <hr className="w-24 h-[5px] rounded-3xl bg-gradient-to-r from-orange-500 via-white to-green-500 mx-auto mb-8" />
           <p className="text-gray-600 max-w-2xl mx-auto text-xl">
             Comprehensive legal solutions tailored to meet your needs with
             expertise and professionalism
@@ -177,6 +174,7 @@ export default function ServicesSection({ ref }) {
               color={service.color}
               title={service.title}
               items={service.items}
+              data={servicesData.services[index]}
             />
           ))}
         </div>
@@ -199,9 +197,13 @@ export default function ServicesSection({ ref }) {
         </div>
 
         <div className="text-center mt-12">
-          <Button className="bg-[#3a0064] hover:bg-purple-900 text-white px-8 py-6 h-auto rounded-xl" style={{
-            animation: 'pulse 1s infinite',
-          }}>
+          <Button
+            className="bg-[#3a0064] hover:bg-purple-900 text-white px-8 py-6 h-auto rounded-xl cursor-pointer"
+            style={{
+              animation: "pulse 1s infinite",
+            }}
+            onClick={() => scrollToSection(refs.consultationRef)}
+          >
             Get Legal Assistance Now <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>

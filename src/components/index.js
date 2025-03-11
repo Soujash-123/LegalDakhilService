@@ -13,6 +13,7 @@ import UpdatesSection from "./UpdatesSection";
 import Home from "./Home";
 import TestimonialSection from "./TestimonialSection";
 import ChatSection from "./ChatSection";
+import ServiceModal from "./ServiceModal";
 
 export {
   Navbar,
@@ -30,4 +31,5 @@ export {
   Home,
   TestimonialSection,
   ChatSection,
+  ServiceModal,
 };
