@@ -15,7 +15,8 @@ export default function Footer({ scrollToSection, refs }) {
                 <span className="text-white">Dakhil</span>
               </a>
               <p className="mt-3 text-gray-400 text-sm">
-                Professional legal assistance made simple, affordable, and accessible for everyone across India.
+                Professional legal assistance made simple, affordable, and
+                accessible for everyone across India.
               </p>
             </div>
             <div className="space-y-2">
@@ -40,7 +41,9 @@ export default function Footer({ scrollToSection, refs }) {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <span className="text-gray-400 text-sm">123 Legal Avenue, Sector 62, Noida, Uttar Pradesh 201301</span>
+                <span className="text-gray-400 text-sm">
+                  123 Legal Avenue, Sector 62, Noida, Uttar Pradesh 201301
+                </span>
               </div>
               <div className="flex items-start">
                 <svg
@@ -74,7 +77,9 @@ export default function Footer({ scrollToSection, refs }) {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <span className="text-gray-400 text-sm">info@legaldakhil.com</span>
+                <span className="text-gray-400 text-sm">
+                  info@legaldakhil.com
+                </span>
               </div>
             </div>
           </div>
@@ -98,7 +103,12 @@ export default function Footer({ scrollToSection, refs }) {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                   Home
                 </a>
@@ -115,7 +125,12 @@ export default function Footer({ scrollToSection, refs }) {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                   Services
                 </a>
@@ -132,7 +147,12 @@ export default function Footer({ scrollToSection, refs }) {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                   Testimonials
                 </a>
@@ -149,7 +169,12 @@ export default function Footer({ scrollToSection, refs }) {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                   Book Consultation
                 </a>
@@ -166,7 +191,12 @@ export default function Footer({ scrollToSection, refs }) {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                   Blogs
                 </a>
@@ -183,7 +213,12 @@ export default function Footer({ scrollToSection, refs }) {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                   About Us
                 </a>
@@ -200,7 +235,12 @@ export default function Footer({ scrollToSection, refs }) {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                   Contact
                 </a>
@@ -217,7 +257,7 @@ export default function Footer({ scrollToSection, refs }) {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#services"
+                  onClick={() => scrollToSection(refs.servicesRef)}
                   className="text-gray-400 hover:text-white transition-colors text-sm flex items-center"
                 >
                   <svg
@@ -227,14 +267,19 @@ export default function Footer({ scrollToSection, refs }) {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                   Insurance Claims
                 </a>
               </li>
               <li>
                 <a
-                  href="#services"
+                  onClick={() => scrollToSection(refs.servicesRef)}
                   className="text-gray-400 hover:text-white transition-colors text-sm flex items-center"
                 >
                   <svg
@@ -244,14 +289,19 @@ export default function Footer({ scrollToSection, refs }) {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                   Company Registration
                 </a>
               </li>
               <li>
                 <a
-                  href="#services"
+                  onClick={() => scrollToSection(refs.servicesRef)}
                   className="text-gray-400 hover:text-white transition-colors text-sm flex items-center"
                 >
                   <svg
@@ -261,14 +311,19 @@ export default function Footer({ scrollToSection, refs }) {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                   Trademark & IP
                 </a>
               </li>
               <li>
                 <a
-                  href="#services"
+                  onClick={() => scrollToSection(refs.servicesRef)}
                   className="text-gray-400 hover:text-white transition-colors text-sm flex items-center"
                 >
                   <svg
@@ -278,14 +333,19 @@ export default function Footer({ scrollToSection, refs }) {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                   GST & Income Tax
                 </a>
               </li>
               <li>
                 <a
-                  href="#services"
+                  onClick={() => scrollToSection(refs.servicesRef)}
                   className="text-gray-400 hover:text-white transition-colors text-sm flex items-center"
                 >
                   <svg
@@ -295,7 +355,12 @@ export default function Footer({ scrollToSection, refs }) {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                   Legal Consultancy
                 </a>
@@ -310,7 +375,8 @@ export default function Footer({ scrollToSection, refs }) {
               <span className="absolute bottom-0 left-0 w-10 h-0.5 bg-[#FF9933]"></span>
             </h3>
             <p className="text-gray-400 text-sm mb-4">
-              Subscribe to our newsletter for legal updates, tips, and company news.
+              Subscribe to our newsletter for legal updates, tips, and company
+              news.
             </p>
             <form className="space-y-3">
               <div className="flex">
@@ -326,7 +392,9 @@ export default function Footer({ scrollToSection, refs }) {
                   Subscribe
                 </button>
               </div>
-              <p className="text-xs text-gray-500">We respect your privacy. Unsubscribe at any time.</p>
+              <p className="text-xs text-gray-500">
+                We respect your privacy. Unsubscribe at any time.
+              </p>
             </form>
 
             {/* Social Media Links */}
@@ -379,24 +447,41 @@ export default function Footer({ scrollToSection, refs }) {
         {/* Footer Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <p className="text-gray-400 text-sm">© 2023 Legal Dakhil. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">
+              © 2023 Legal Dakhil. All rights reserved.
+            </p>
           </div>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+            <a
+              href="/docs/Policy/TERMS AND CONDITIONS FOR LEGAL DAKHIL SERVICES WEBSITE.pdf"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+              type="application/pdf"
+              target="_blank"
+            >
               Terms of Service
             </a>
             <span className="text-gray-600">|</span>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+            <a
+              href="/docs/Policy/PRIVACY POLICY FOR LEGAL DAKHIL SERVICES.pdf"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+              type="application/pdf"
+              target="_blank"
+            >
               Privacy Policy
             </a>
             <span className="text-gray-600">|</span>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+            <a
+              href="/docs/Policy/Refund Policy.pdf"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+              type="application/pdf"
+              target="_blank"
+            >
               Refund Policy
             </a>
             <span className="text-gray-600">|</span>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">
-              Cookie Policy
-            </a>
           </div>
         </div>
       </div>
