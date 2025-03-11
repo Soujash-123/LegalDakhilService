@@ -258,7 +258,7 @@ export default function Footer({ scrollToSection, refs }) {
               <li>
                 <a
                   onClick={() => scrollToSection(refs.servicesRef)}
-                  className="text-gray-400 hover:text-white transition-colors text-sm flex items-center"
+                  className="text-gray-400 hover:text-white transition-colors text-sm flex items-center cursor-pointer"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -280,7 +280,7 @@ export default function Footer({ scrollToSection, refs }) {
               <li>
                 <a
                   onClick={() => scrollToSection(refs.servicesRef)}
-                  className="text-gray-400 hover:text-white transition-colors text-sm flex items-center"
+                  className="text-gray-400 hover:text-white transition-colors text-sm flex items-center cursor-pointer"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -302,7 +302,7 @@ export default function Footer({ scrollToSection, refs }) {
               <li>
                 <a
                   onClick={() => scrollToSection(refs.servicesRef)}
-                  className="text-gray-400 hover:text-white transition-colors text-sm flex items-center"
+                  className="text-gray-400 hover:text-white transition-colors text-sm flex items-center cursor-pointer"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -324,7 +324,7 @@ export default function Footer({ scrollToSection, refs }) {
               <li>
                 <a
                   onClick={() => scrollToSection(refs.servicesRef)}
-                  className="text-gray-400 hover:text-white transition-colors text-sm flex items-center"
+                  className="text-gray-400 hover:text-white transition-colors text-sm flex items-center cursor-pointer"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -346,7 +346,7 @@ export default function Footer({ scrollToSection, refs }) {
               <li>
                 <a
                   onClick={() => scrollToSection(refs.servicesRef)}
-                  className="text-gray-400 hover:text-white transition-colors text-sm flex items-center"
+                  className="text-gray-400 hover:text-white transition-colors text-sm flex items-center cursor-pointer"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
