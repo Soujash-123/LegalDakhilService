@@ -51,7 +51,6 @@ const Modal = ({ isOpen, onClose, title, children }) => {
 
 export default function ServiceModal({ data }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  console.log(data.description);
 
   return (
     <div className="flex">
