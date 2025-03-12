@@ -166,7 +166,7 @@ export default function ServicesSection({ refs, scrollToSection }) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 px-10">
           {services.map((service, index) => (
             <ServiceCard
               key={index}
@@ -181,7 +181,7 @@ export default function ServicesSection({ refs, scrollToSection }) {
 
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-purple-800 mb-8">
-            Why Choose Legal Dakhil Services?
+            Why Choose Dakhil Now Services?
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
