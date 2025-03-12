@@ -27,7 +27,7 @@ export default function Navbar({ scrollToSection, refs }) {
   }
 
   return (
-    <header className="bg-white py-4 flex flex-col items-center justify-between shadow-md sticky top-0 z-50">
+    <header className="bg-white w-full py-4 flex flex-col items-center justify-between shadow-md fixed top-0 z-50">
       <div className="w-full px-8 lg:px-18 flex items-center justify-between">
         <div className="flex items-center space-x-4">
           <div className=" bg-gradient-to-br from-orange-600 via-white to-green-600 border border-purple-600 rounded-full flex items-center justify-center">
@@ -38,8 +38,8 @@ export default function Navbar({ scrollToSection, refs }) {
             className="flex items-center cursor-pointer"
           >
             <span className="text-2xl font-bold">
-              <span className="text-[#ff9d3a]">Legal</span>
-              <span className="text-[#138808]">Dakhil</span>
+              <span className="text-[#ff9d3a]">Dakhil</span>
+              <span className="text-[#138808]">Now</span>
               <span className="text-[#4b0082]">Services</span>
             </span>
           </a>

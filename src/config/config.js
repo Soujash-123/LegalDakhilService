@@ -10,4 +10,7 @@ export const config = {
 
     "emailJsAdminEmail": import.meta.env.VITE_EMAILJS_ADMIN_EMAIL,
     "whatsappNumber": import.meta.env.VITE_ADMIN_WHATSAPP_NO,
+
+    "instagramUrl": "https://www.instagram.com/daakhilnow?igsh=c3Nkbzh2ZGg4NDd2",
+    "facebookUrl": "https://www.facebook.com/share/1F3NBs1JWo/",
 }

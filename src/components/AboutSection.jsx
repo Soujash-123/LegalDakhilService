@@ -49,7 +49,7 @@ export default function AboutSection({ ref }) {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">
-            About <span className="text-purple-800">Legal Dakhil</span> Services
+            About <span className="text-purple-800">Dakhil Now</span> Services
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
             Providing trusted legal consultancy and services across India with a
@@ -105,7 +105,7 @@ export default function AboutSection({ ref }) {
             </h3>
 
             <p className="text-gray-600">
-              Legal Dakhil Services was established with a vision to make
+              Dakhil Now Services was established with a vision to make
               quality legal services accessible to individuals and businesses
               across India. Our team of experienced legal professionals is
               dedicated to providing practical, cost-effective solutions to

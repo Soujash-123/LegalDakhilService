@@ -1,18 +1,19 @@
 import React from "react";
-import { Facebook, Twitter, Linkedin, Instagram, Youtube } from "lucide-react";
+import { Facebook, Twitter, Instagram } from "lucide-react";
+import { config } from "../config/config";
 
 export default function Footer({ scrollToSection, refs }) {
   return (
     <footer id="footer" className="bg-neutral-900 text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
         {/* Footer Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12 px-10">
           {/* Company Info */}
           <div>
             <div className="mb-6">
               <a href="#hero" className="text-2xl font-bold flex items-center">
-                <span className="text-[#FF9933]">Legal</span>
-                <span className="text-white">Dakhil</span>
+                <span className="text-[#FF9933]">Dakhil</span>
+                <span className="text-white">Now</span>
               </a>
               <p className="mt-3 text-gray-400 text-sm">
                 Professional legal assistance made simple, affordable, and
@@ -78,7 +79,7 @@ export default function Footer({ scrollToSection, refs }) {
                   />
                 </svg>
                 <span className="text-gray-400 text-sm">
-                  info@legaldakhil.com
+                info.daakhilnow@gmail.com
                 </span>
               </div>
             </div>
@@ -402,39 +403,31 @@ export default function Footer({ scrollToSection, refs }) {
               <h4 className="text-sm font-semibold mb-3">Follow Us</h4>
               <div className="flex space-x-3">
                 <a
-                  href="#"
-                  className="bg-neutral-800 hover:bg-[#FF9933] w-8 h-8 rounded-full flex items-center justify-center transition-colors"
+                  href={config.facebookUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-neutral-800 hover:bg-[#FF9933] w-8 h-8 rounded-full flex items-center justify-center transition-colors cursor-pointer"
                   aria-label="Facebook"
                 >
                   <Facebook className="w-4 h-4" />
                 </a>
                 <a
-                  href="#"
-                  className="bg-neutral-800 hover:bg-[#FF9933] w-8 h-8 rounded-full flex items-center justify-center transition-colors"
+                  // href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-neutral-800 hover:bg-[#FF9933] w-8 h-8 rounded-full flex items-center justify-center transition-colors cursor-pointer"
                   aria-label="Twitter"
                 >
                   <Twitter className="w-4 h-4" />
                 </a>
                 <a
-                  href="#"
-                  className="bg-neutral-800 hover:bg-[#FF9933] w-8 h-8 rounded-full flex items-center justify-center transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="w-4 h-4" />
-                </a>
-                <a
-                  href="#"
-                  className="bg-neutral-800 hover:bg-[#FF9933] w-8 h-8 rounded-full flex items-center justify-center transition-colors"
+                  href={config.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-neutral-800 hover:bg-[#FF9933] w-8 h-8 rounded-full flex items-center justify-center transition-colors cursor-pointer"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-4 h-4" />
-                </a>
-                <a
-                  href="#"
-                  className="bg-neutral-800 hover:bg-[#FF9933] w-8 h-8 rounded-full flex items-center justify-center transition-colors"
-                  aria-label="YouTube"
-                >
-                  <Youtube className="w-4 h-4" />
                 </a>
               </div>
             </div>
@@ -445,10 +438,10 @@ export default function Footer({ scrollToSection, refs }) {
         <div className="border-t border-neutral-800 my-8"></div>
 
         {/* Footer Bottom Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center px-10">
           <div className="mb-4 md:mb-0">
             <p className="text-gray-400 text-sm">
-              © 2023 Legal Dakhil. All rights reserved.
+              © 2025 Dakhil Now. All rights reserved.
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-4 text-sm">

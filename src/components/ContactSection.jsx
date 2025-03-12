@@ -5,9 +5,7 @@ import {
   Phone,
   Mail,
   Clock,
-  Linkedin,
   Twitter,
-  Github,
   Instagram,
   Facebook,
 } from "lucide-react";
@@ -77,11 +75,9 @@ export default function ContactSection({ ref }) {
   };
 
   const socialLinks = [
-    { icon: <Linkedin className="h-5 w-5" />, href: "#" },
     { icon: <Twitter className="h-5 w-5" />, href: "#" },
-    { icon: <Github className="h-5 w-5" />, href: "#" },
-    { icon: <Instagram className="h-5 w-5" />, href: "#" },
-    { icon: <Facebook className="h-5 w-5" />, href: "#" },
+    { icon: <Instagram className="h-5 w-5" />, href: config.instagramUrl },
+    { icon: <Facebook className="h-5 w-5" />, href: config.facebookUrl },
   ];
 
   return (
@@ -208,7 +204,7 @@ export default function ContactSection({ ref }) {
                 <div>
                   <h4 className="font-semibold mb-1">Head Office</h4>
                   <p className="text-purple-100">
-                    Legal Dakhil Tower, 123 Justice Avenue
+                    Dakhil Now Tower, 123 Justice Avenue
                     <br />
                     New Delhi - 110001, India
                   </p>
@@ -220,9 +216,9 @@ export default function ContactSection({ ref }) {
                 <div>
                   <h4 className="font-semibold mb-1">Phone</h4>
                   <p className="text-purple-100">
-                    Customer Support: +91 98765 43210
+                    Customer Support: +91 82526 70079
                     <br />
-                    Business Inquiries: +91 98765 43211
+                    Business Inquiries: +91 82526 70079
                   </p>
                 </div>
               </div>
@@ -232,9 +228,9 @@ export default function ContactSection({ ref }) {
                 <div>
                   <h4 className="font-semibold mb-1">Email</h4>
                   <p className="text-purple-100">
-                    support@legaldakhil.com
+                    sale.daakhilnow@gmail.com
                     <br />
-                    info@legaldakhil.com
+                    info.daakhilnow@gmail.com 
                   </p>
                 </div>
               </div>
@@ -261,7 +257,9 @@ export default function ContactSection({ ref }) {
                   <a
                     key={index}
                     href={link.href}
-                    className="bg-purple-700 hover:bg-purple-600 p-2 rounded-full transition-colors"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="bg-purple-700 hover:bg-purple-600 p-2 rounded-full transition-colors cursor-pointer"
                   >
                     {link.icon}
                   </a>

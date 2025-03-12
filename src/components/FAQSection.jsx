@@ -22,12 +22,12 @@ export default function FAQSection({ refs, scrollToSection }) {
   const faqs = {
     general: [
       {
-        question: "What legal services does Legal Dakhil offer?",
+        question: "What legal services does Dakhil Now offer?",
         answer:
-          "Legal Dakhil offers a comprehensive range of legal services including insurance claims, startup & company registration, trademark & intellectual property, GST services, income tax services, and legal consultancy for various matters.",
+          "Dakhil Now offers a comprehensive range of legal services including insurance claims, startup & company registration, trademark & intellectual property, GST services, income tax services, and legal consultancy for various matters.",
       },
       {
-        question: "How can I get in touch with Legal Dakhil Services?",
+        question: "How can I get in touch with Dakhil Now Services?",
         answer:
           "You can reach us through multiple channels: phone, email, or by filling out our contact form. Our customer support team is available Monday to Friday, 9:00 AM - 6:00 PM.",
       },

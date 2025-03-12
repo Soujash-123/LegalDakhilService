@@ -106,14 +106,14 @@ export default function TestimonialSection({ ref }) {
             {/* Navigation Buttons */}
             <button
               onClick={() => paginate(-1)}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 w-12 h-12 rounded-full bg-gray-600 shadow-lg flex items-center justify-center text-gray-300 hover:text-purple-400 z-10"
+              className="absolute hidden left-0 top-1/2 -translate-y-1/2 -translate-x-16 w-12 h-12 rounded-full bg-gray-600 shadow-lg md:flex items-center justify-center text-gray-300 hover:text-purple-400 z-10"
             >
               <ChevronLeft className="h-6 w-6" />
             </button>
   
             <button
               onClick={() => paginate(1)}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 w-12 h-12 rounded-full bg-gray-600 shadow-lg flex items-center justify-center text-gray-300 hover:text-purple-400 z-10"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 w-12 h-12 rounded-full bg-gray-600 shadow-lg hidden md:flex items-center justify-center text-gray-300 hover:text-purple-400 z-10"
             >
               <ChevronRight className="h-6 w-6" />
             </button>
