@@ -8,7 +8,7 @@ export const config = {
     "emailJsTemplateId2": import.meta.env.VITE_EMAILJS_TEMPLATE_ID_2,
     "emailJsPublicKey2": import.meta.env.VITE_EMAILJS_PUBLIC_KEY_2,
 
-    "emailJsAdminEmail": import.meta.env.VITE_EMAILJS_ADMIN_EMAIL,
+    "emailJsAdminEmail": "sale.daakhilnow@gmail.com",
     "whatsappNumber": import.meta.env.VITE_ADMIN_WHATSAPP_NO,
 
     "instagramUrl": "https://www.instagram.com/daakhilnow?igsh=c3Nkbzh2ZGg4NDd2",
