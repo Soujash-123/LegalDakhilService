@@ -43,7 +43,7 @@ export default function Footer({ scrollToSection, refs }) {
                   />
                 </svg>
                 <span className="text-gray-400 text-sm">
-                  123 Legal Avenue, Sector 62, Noida, Uttar Pradesh 201301
+                  Dhanbad, Jharkhand, 826001, India
                 </span>
               </div>
               <div className="flex items-start">
@@ -446,7 +446,7 @@ export default function Footer({ scrollToSection, refs }) {
           </div>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <a
-              href="/docs/Policy/TERMS AND CONDITIONS FOR LEGAL DAKHIL SERVICES WEBSITE.pdf"
+              href="/docs/Policy/TERMS AND CONDITIONS FOR DAAKHIL NOW SERVICES WEBSITE.pdf"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
               type="application/pdf"
@@ -456,7 +456,7 @@ export default function Footer({ scrollToSection, refs }) {
             </a>
             <span className="text-gray-600">|</span>
             <a
-              href="/docs/Policy/PRIVACY POLICY FOR LEGAL DAKHIL SERVICES.pdf"
+              href="/docs/Policy/PRIVACY POLICY FOR DAAKHIL NOW SERVICES.pdf"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
               type="application/pdf"

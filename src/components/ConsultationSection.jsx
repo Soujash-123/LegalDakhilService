@@ -288,14 +288,27 @@ export default function ConsultationSection({ ref }) {
                     setFormData((prev) => ({ ...prev, agreeToTerms: checked }))
                   }
                   required
+                  className="cursor-pointer"
                 />
                 <label htmlFor="terms" className="text-sm text-gray-600">
                   I agree to the{" "}
-                  <a href="#" className="text-purple-700 hover:underline">
+                  <a 
+                    href="/docs/Policy/TERMS AND CONDITIONS FOR DAAKHIL NOW SERVICES WEBSITE.pdf" 
+                    rel="noopener noreferrer"
+                    className="text-purple-700 hover:underline"
+                    type="application/pdf"
+                    target="_blank"
+                  >
                     Terms of Service
                   </a>{" "}
                   and{" "}
-                  <a href="#" className="text-purple-700 hover:underline">
+                  <a 
+                    href="/docs/Policy/PRIVACY POLICY FOR DAAKHIL NOW SERVICES.pdf"
+                    rel="noopener noreferrer"
+                    type="application/pdf"
+                    target="_blank"
+                    className="text-purple-700 hover:underline"
+                  >
                     Privacy Policy
                   </a>
                 </label>
