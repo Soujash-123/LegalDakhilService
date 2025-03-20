@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ScrollText, X } from "lucide-react";
 import { Button } from "./ui";
+import { useNavigate } from "react-router-dom";
 
 const Modal = ({ isOpen, onClose, title, children }) => {
   return (
@@ -51,7 +52,7 @@ const Modal = ({ isOpen, onClose, title, children }) => {
 
 export default function ServiceModal({ data }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const navigate = useNavigate();
   return (
     <div className="flex">
       <Button
@@ -92,15 +93,19 @@ export default function ServiceModal({ data }) {
                     <div className="bg-green-100 p-1 rounded-full mt-0.5 mr-3 flex-shrink-0">
                       <ScrollText className="h-6 w-6 text-green-600" />
                     </div>
-                    <a
-                      href={content.link}
-                      rel="noopener noreferrer"
+                    <div
                       className="text-gray-700 hover:underline cursor-pointer"
-                      type="application/pdf"
-                      target="_blank"
+                      onClick={() =>
+                        navigate("/document", {
+                          state: {
+                            pdfUrl: content.link,
+                            title: content.name,
+                          },
+                        })
+                      }
                     >
                       {content.name}
-                    </a>
+                    </div>
                   </motion.li>
                 ))}
               </ul>
