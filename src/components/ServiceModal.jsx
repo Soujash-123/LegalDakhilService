@@ -96,7 +96,7 @@ export default function ServiceModal({ data }) {
                     <div
                       className="text-gray-700 hover:underline cursor-pointer"
                       onClick={() =>
-                        navigate("/document", {
+                        navigate(`/document/${encodeURIComponent(content.name)}`, {
                           state: {
                             pdfUrl: content.link,
                             title: content.name,
