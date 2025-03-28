@@ -15,7 +15,7 @@ const router = createBrowserRouter([
         element: <HomePage />
       },
       {
-        path: '/document',
+        path: '/document/:documentName',
         element: <DocumentView />
       }
     ]
