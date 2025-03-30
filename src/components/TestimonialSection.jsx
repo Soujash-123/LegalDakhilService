@@ -5,7 +5,7 @@ import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 const testimonials = [
     {
       rating: 5,
-      text: "After struggling with GST compliance issues, I approached Legal Dakhil Services for help. Their team handled everything efficiently and resolved all pending notices. Their knowledge of tax regulations is impressive, and I would highly recommend their services to any business owner.",
+      text: "After struggling with GST compliance issues, I approached Daakhil Now Services for help. Their team handled everything efficiently and resolved all pending notices. Their knowledge of tax regulations is impressive, and I would highly recommend their services to any business owner.",
       name: "Sunita Kapoor",
       title: "Business Owner, Delhi",
       initials: "SK",
@@ -15,7 +15,7 @@ const testimonials = [
     },
     {
       rating: 5,
-      text: "Legal Dakhil Services provided exceptional guidance during my trademark registration process. Their expertise saved me time and potential legal complications. The team was professional, responsive, and truly cared about my business needs.",
+      text: "Daakhil Now Services provided exceptional guidance during my trademark registration process. Their expertise saved me time and potential legal complications. The team was professional, responsive, and truly cared about my business needs.",
       name: "Rajesh Patel",
       title: "Startup Founder, Mumbai",
       initials: "RP",
@@ -25,7 +25,7 @@ const testimonials = [
     },
     {
       rating: 5,
-      text: "Outstanding service from Legal Dakhil for company registration. The process was smooth, and they handled all documentation expertly. Their attention to detail and professional approach made the entire experience hassle-free.",
+      text: "Outstanding service from Daakhil Now for company registration. The process was smooth, and they handled all documentation expertly. Their attention to detail and professional approach made the entire experience hassle-free.",
       name: "Priya Sharma",
       title: "CEO, Bangalore",
       initials: "PS",

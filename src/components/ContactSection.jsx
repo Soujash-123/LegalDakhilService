@@ -241,9 +241,7 @@ export default function ContactSection({ ref }) {
                 <div>
                   <h4 className="font-semibold mb-1">Email</h4>
                   <p className="text-purple-100">
-                    sale.daakhilnow@gmail.com
-                    <br />
-                    info.daakhilnow@gmail.com 
+                    info.daakhilnow@gmail.com
                   </p>
                 </div>
               </div>
@@ -253,11 +251,11 @@ export default function ContactSection({ ref }) {
                 <div>
                   <h4 className="font-semibold mb-1">Business Hours</h4>
                   <p className="text-purple-100">
-                    Monday to Friday: 9:00 AM - 6:00 PM
+                    Office Hours: Monday - Sunday
                     <br />
-                    Saturday: 10:00 AM - 4:00 PM
+                    9:00 AM - 6:00 PM
                     <br />
-                    Sunday: Closed
+                    <span className="font-medium">24/7 Emergency Assistance Available</span>
                   </p>
                 </div>
               </div>

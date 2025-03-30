@@ -8,7 +8,7 @@ export default function ChatSection({ setIsOpen}) {
   const [messages, setMessages] = useState([
     {
       type: "bot",
-      text: "👋 Hi there! I'm the Legal Dakhil AI assistant. How can I help you today?",
+      text: "👋 Hi there! I'm the Daakhil Now AI assistant. How can I help you today?",
     },
   ])
   const [inputMessage, setInputMessage] = useState("")
@@ -91,7 +91,7 @@ export default function ChatSection({ setIsOpen}) {
   return (
     <div className="fixed flex flex-col bottom-25 right-8 z-50 w-[200px] md:w-[250px] lg:w-[300px]">
       <div className="bg-purple-800 px-4 py-3 flex items-center justify-between rounded-t-xl">
-        <h3 className="text-white font-semibold">Legal Dakhil Assistant</h3>
+        <h3 className="text-white font-semibold">Daakhil Now Assistant</h3>
         <button
           onClick={() => setIsOpen(false)}
           className="text-white/80 hover:text-white cursor-pointer"

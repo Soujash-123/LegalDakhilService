@@ -12,7 +12,7 @@ export default function Footer({ scrollToSection, refs }) {
           <div>
             <div className="mb-6">
               <a href="#hero" className="text-2xl font-bold flex items-center">
-                <span className="text-[#FF9933]">Dakhil</span>
+                <span className="text-[#FF9933]">Daakhil</span>
                 <span className="text-white">Now</span>
               </a>
               <p className="mt-3 text-gray-400 text-sm">
@@ -81,6 +81,18 @@ export default function Footer({ scrollToSection, refs }) {
                 <span className="text-gray-400 text-sm">
                 info.daakhilnow@gmail.com
                 </span>
+              </div>
+              <div className="mt-6">
+                <h4 className="text-white font-semibold mb-4">Business Hours</h4>
+                <div className="space-y-2">
+                  <p className="text-gray-400 text-sm">
+                    <span className="font-medium">Office Hours:</span> Monday - Sunday
+                  </p>
+                  <p className="text-gray-400 text-sm">9:00 AM - 6:00 PM</p>
+                  <p className="text-gray-400 text-sm">
+                    <span className="font-medium">24/7 Emergency Assistance Available</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -252,7 +264,7 @@ export default function Footer({ scrollToSection, refs }) {
           {/* Legal Services */}
           <div>
             <h3 className="text-lg font-bold mb-6 relative">
-              Legal Services
+              Our Services
               <span className="absolute bottom-0 left-0 w-10 h-0.5 bg-[#FF9933]"></span>
             </h3>
             <ul className="space-y-3">
@@ -441,7 +453,7 @@ export default function Footer({ scrollToSection, refs }) {
         <div className="flex flex-col md:flex-row justify-between items-center px-10">
           <div className="mb-4 md:mb-0">
             <p className="text-gray-400 text-sm">
-              © 2025 Dakhil Now. All rights reserved.
+              © 2025 Daakhil Now. All rights reserved.
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-4 text-sm">

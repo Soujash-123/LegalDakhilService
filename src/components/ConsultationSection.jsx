@@ -153,10 +153,8 @@ export default function ConsultationSection({ ref }) {
             General <span className="text-purple-800">Consultation</span>
           </h2>
           <hr className="w-24 h-[3px] rounded-3xl bg-amber-500 mx-auto mb-8 border-none" />
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Get expert legal advice tailored to your specific needs. Fill out
-            the form below to schedule a consultation with our experienced legal
-            team.
+          <p className="text-gray-600 text-lg mb-8">
+            Experience expert handling of your regulatory matters and business compliance
           </p>
         </div>
 

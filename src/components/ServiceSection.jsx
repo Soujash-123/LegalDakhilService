@@ -137,7 +137,7 @@ export default function ServicesSection({ refs, scrollToSection }) {
       icon: <Users className="h-6 w-6 text-green-500" />,
       title: "Expert Professionals",
       description:
-        "Our team consists of experienced legal professionals and consultants",
+        "Our team consists of experienced experts and consultants",
     },
     {
       icon: <Percent className="h-6 w-6 text-purple-500" />,
@@ -157,7 +157,7 @@ export default function ServicesSection({ refs, scrollToSection }) {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <div className="text-4xl font-extrabold text-purple-900 mb-4">
-            Our Legal Services
+            Our Services
           </div>
           <hr className="w-24 h-[5px] rounded-3xl bg-gradient-to-r from-orange-500 via-white to-green-500 mx-auto mb-8" />
           <p className="text-gray-600 max-w-2xl mx-auto text-xl">
@@ -181,7 +181,7 @@ export default function ServicesSection({ refs, scrollToSection }) {
 
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-purple-800 mb-8">
-            Why Choose Dakhil Now Services?
+            Why Choose Daakhil Now Services?
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -204,7 +204,7 @@ export default function ServicesSection({ refs, scrollToSection }) {
             }}
             onClick={() => scrollToSection(refs.consultationRef)}
           >
-            Get Legal Assistance Now <ArrowRight className="ml-2 h-5 w-5" />
+            Get Expert Assistance <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
         <style>

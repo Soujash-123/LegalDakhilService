@@ -37,8 +37,8 @@ export default function Navbar({ scrollToSection, refs }) {
             onClick={() => scrollToSection(refs.homeRef)}
             className="flex items-center cursor-pointer"
           >
-            <span className="text-2xl font-bold">
-              <span className="text-[#ff9d3a]">Dakhil</span>
+            <span className="text-xl font-bold">
+              <span className="text-[#ff9d3a]">Daakhil</span>
               <span className="text-[#138808]">Now</span>
               <span className="text-[#4b0082]">Services</span>
             </span>

@@ -32,6 +32,8 @@ export default function DocumentView() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'Access-Control-Allow-Origin': '*',
         },
         mode: 'cors',
         body: JSON.stringify({

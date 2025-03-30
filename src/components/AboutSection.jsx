@@ -6,12 +6,12 @@ export default function AboutSection({ ref }) {
   const stats = [
     {
       icon: <Users className="h-8 w-8 text-purple-600" />,
-      number: "5,000",
+      number: "1,000",
       label: "Happy Clients",
     },
     {
       icon: <Shield className="h-8 w-8 text-orange-500" />,
-      number: "3,500",
+      number: "960",
       label: "Cases Won",
     },
     {
@@ -21,7 +21,7 @@ export default function AboutSection({ ref }) {
     },
     {
       icon: <Zap className="h-8 w-8 text-purple-600" />,
-      number: "25",
+      number: "2",
       label: "Branch Offices",
     },
   ];
@@ -49,11 +49,11 @@ export default function AboutSection({ ref }) {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">
-            About <span className="text-purple-800">Dakhil Now</span> Services
+            About <span className="text-purple-800">Daakhil Now</span>
           </h2>
-          <p className="text-gray-600 max-w-3xl mx-auto">
-            Providing trusted legal consultancy and services across India with a
-            commitment to excellence, integrity, and client satisfaction.
+          <hr className="w-24 h-[3px] rounded-3xl bg-amber-500 mx-auto mb-8 border-none" />
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Your Trusted Expert Partner in Business Solutions
           </p>
         </div>
 
@@ -71,9 +71,8 @@ export default function AboutSection({ ref }) {
               </div>
 
               <p className="text-purple-100 mb-8">
-                To provide accessible, high-quality legal services that empower
-                individuals and businesses to navigate the complex legal
-                landscape with confidence and success.
+                To provide accessible, high-quality services and business compliance that empower
+                individuals and businesses to navigate the complex regulatory landscape with confidence and success.
               </p>
 
               <div className="space-y-6">
@@ -101,11 +100,11 @@ export default function AboutSection({ ref }) {
           {/* Right Column - Company Info */}
           <div className="space-y-6 shadow-md p-8 md:p-12 bg-white rounded-2xl ">
             <h3 className="text-2xl font-bold text-gray-900">
-              Your Trusted Legal Partner
+              Your Trusted Expert Partner
             </h3>
 
             <p className="text-gray-600">
-              Dakhil Now Services was established with a vision to make
+              Daakhil Now Services was established with a vision to make
               quality legal services accessible to individuals and businesses
               across India. Our team of experienced legal professionals is
               dedicated to providing practical, cost-effective solutions to

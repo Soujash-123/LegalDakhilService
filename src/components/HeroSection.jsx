@@ -17,7 +17,7 @@ export default function HeroSection({ scrollToSection, refs }) {
       <div className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
         Expert{" "}
         <span className="bg-gradient-to-r from-orange-500 to-white bg-clip-text text-transparent">
-          Legal
+          Regulatory
         </span>{" "}
         <span className="bg-gradient-to-r from-white to-green-500 text-transparent bg-clip-text">
           Solutions
@@ -26,9 +26,7 @@ export default function HeroSection({ scrollToSection, refs }) {
       </div>
 
       <p className="text-gray-300 text-lg max-w-xl">
-        Navigate complex legal challenges with confidence. Our team of
-        experienced attorneys provides personalized legal services tailored to
-        your specific needs across all jurisdictions in India.
+        Navigate complex regulatory challenges with confidence. Our team of experts provide comprehensive legal services and business compliance solutions tailored to your specific needs across all jurisdictions in India.
       </p>
 
       <div className="flex flex-wrap gap-8 pt-4">
