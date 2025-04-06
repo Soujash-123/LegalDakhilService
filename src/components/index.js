@@ -14,6 +14,7 @@ import Home from "./Home";
 import TestimonialSection from "./TestimonialSection";
 import ChatSection from "./ChatSection";
 import ServiceModal from "./ServiceModal";
+import SocialMediaModal from "./SocialMediaModal";
 
 export {
   Navbar,
@@ -32,4 +33,5 @@ export {
   TestimonialSection,
   ChatSection,
   ServiceModal,
+  SocialMediaModal,
 };

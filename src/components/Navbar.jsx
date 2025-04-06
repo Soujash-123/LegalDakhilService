@@ -1,8 +1,8 @@
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui";
-
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import SocialMediaModal from "./SocialMediaModal";
 
 export default function Navbar({ scrollToSection, refs }) {
   const menuItems = [
@@ -17,13 +17,17 @@ export default function Navbar({ scrollToSection, refs }) {
   ];
 
   const [openNav, setOpenNav] = useState(false);
+  const [isSocialModalOpen, setIsSocialModalOpen] = useState(false);
 
   const handleNavClick = (ref) => {
-    scrollToSection(ref);
-
-    setTimeout(() => {
-      setOpenNav(false);
-    }, 1000);
+    if (ref === refs.contactRef) {
+      setIsSocialModalOpen(true);
+    } else {
+      scrollToSection(ref);
+      setTimeout(() => {
+        setOpenNav(false);
+      }, 1000);
+    }
   }
 
   return (
@@ -50,7 +54,7 @@ export default function Navbar({ scrollToSection, refs }) {
             <div key={item.name} className="flex items-center flex-col group">
               <div
                 className="text-gray-500 hover:text-orange-600 font-bold cursor-pointer"
-                onClick={() => scrollToSection(item.ref)}
+                onClick={() => handleNavClick(item.ref)}
               >
                 {item.name}
               </div>
@@ -131,6 +135,11 @@ export default function Navbar({ scrollToSection, refs }) {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <SocialMediaModal 
+        isOpen={isSocialModalOpen} 
+        onClose={() => setIsSocialModalOpen(false)} 
+      />
     </header>
   );
 }
