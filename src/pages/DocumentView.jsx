@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { documentContent } from "../data/documentContent";
+import servicesData from "../data/services.json";
 
 export default function DocumentView() {
   const location = useLocation();
@@ -28,7 +30,177 @@ export default function DocumentView() {
       `Complete ${title} document with all necessary guidelines and instructions.`,
   };
 
-  const sections = [
+  // Get the appropriate sections based on the document name
+  const getSections = () => {
+    // Extract the document type from the title, URL path, or document name
+    const urlPath = pdfUrl || '';
+    const docName = documentName || '';
+    
+    // Debug log to see what's being detected
+    console.log('Document title:', title);
+    console.log('Document name:', docName);
+    console.log('URL path:', urlPath);
+    
+    // Try to find the document in services.json
+    let foundDocType = null;
+    
+    // Check if the document is in the Startup & Business Compliance section
+    if (urlPath.includes('/docs/StartUp/') || docName.toLowerCase().includes('startup')) {
+      if (urlPath.includes('GST') || docName.toLowerCase().includes('gst')) {
+        foundDocType = 'gstRegistration';
+      } else if (urlPath.includes('MSME') || docName.toLowerCase().includes('msme') || docName.toLowerCase().includes('udyam')) {
+        foundDocType = 'udyamRegistration';
+      } else if (urlPath.includes('FSSAI') || docName.toLowerCase().includes('fssai')) {
+        foundDocType = 'fssaiLicense';
+      } else if (urlPath.includes('Import') || urlPath.includes('Export') || 
+                 docName.toLowerCase().includes('import') || docName.toLowerCase().includes('export')) {
+        foundDocType = 'importExportCompliance';
+      }
+    }
+    
+    // Check if the document is in the Trademark section
+    else if (urlPath.includes('/docs/Trademark/') || docName.toLowerCase().includes('trademark')) {
+      if (urlPath.includes('Registration') || docName.toLowerCase().includes('registration')) {
+        foundDocType = 'trademarkRegistration';
+      } else if (urlPath.includes('Objection') || docName.toLowerCase().includes('objection')) {
+        foundDocType = 'trademarkObjection';
+      } else if (urlPath.includes('Certificate') || docName.toLowerCase().includes('certificate')) {
+        foundDocType = 'trademarkCertificate';
+      } else if (urlPath.includes('Opposition') || docName.toLowerCase().includes('opposition')) {
+        foundDocType = 'trademarkOpposition';
+      } else if (urlPath.includes('Hearing') || docName.toLowerCase().includes('hearing')) {
+        foundDocType = 'trademarkHearing';
+      } else if (urlPath.includes('Rectification') || docName.toLowerCase().includes('rectification')) {
+        foundDocType = 'trademarkRectification';
+      } else if (urlPath.includes('Infringement') || docName.toLowerCase().includes('infringement')) {
+        foundDocType = 'trademarkInfringementNotice';
+      }
+    }
+    
+    // If not found in Startup section, check other sections
+    if (!foundDocType) {
+      // Check if the document is in the Copyright section
+      if (urlPath.includes('/docs/Copyright/') || docName.toLowerCase().includes('copyright')) {
+        // Use default sections for copyright documents
+      }
+      // Check if the document is in the Agreement section
+      else if (urlPath.includes('/docs/Agreement/') || docName.toLowerCase().includes('agreement')) {
+        // Use default sections for agreement documents
+      }
+      // Check if the document is in the Contract section
+      else if (urlPath.includes('/docs/Contract/') || docName.toLowerCase().includes('contract')) {
+        // Use default sections for contract documents
+      }
+      // Check if the document is in the Insurance section
+      else if (urlPath.includes('/docs/Insurance/') || docName.toLowerCase().includes('insurance')) {
+        if (urlPath.includes('Health') || docName.toLowerCase().includes('health')) {
+          foundDocType = 'healthInsuranceClaim';
+        } else if (urlPath.includes('Vehicle') || docName.toLowerCase().includes('vehicle')) {
+          foundDocType = 'vehicleInsuranceClaim';
+        } else if (urlPath.includes('Life') || docName.toLowerCase().includes('life')) {
+          foundDocType = 'lifeInsuranceClaim';
+        } else if (urlPath.includes('Property') || urlPath.includes('Homeowner') || 
+                   docName.toLowerCase().includes('property') || docName.toLowerCase().includes('homeowner')) {
+          foundDocType = 'propertyInsuranceClaim';
+        }
+      }
+    }
+    
+    // If still not found, use keyword matching
+    if (!foundDocType) {
+      foundDocType = 
+        // Trademark related documents
+        title.toLowerCase().includes('trademark registration') || 
+        urlPath.toLowerCase().includes('trademark registration') || 
+        docName.toLowerCase().includes('trademark registration') ? 'trademarkRegistration' :
+        
+        title.toLowerCase().includes('trademark objection') || 
+        urlPath.toLowerCase().includes('trademark objection') || 
+        docName.toLowerCase().includes('trademark objection') ? 'trademarkObjection' :
+        
+        title.toLowerCase().includes('trademark certificate') || 
+        urlPath.toLowerCase().includes('trademark certificate') || 
+        docName.toLowerCase().includes('trademark certificate') ? 'trademarkCertificate' :
+        
+        title.toLowerCase().includes('trademark opposition') || 
+        urlPath.toLowerCase().includes('trademark opposition') || 
+        docName.toLowerCase().includes('trademark opposition') ? 'trademarkOpposition' :
+        
+        title.toLowerCase().includes('trademark hearing') || 
+        urlPath.toLowerCase().includes('trademark hearing') || 
+        docName.toLowerCase().includes('trademark hearing') ? 'trademarkHearing' :
+        
+        title.toLowerCase().includes('trademark rectification') || 
+        urlPath.toLowerCase().includes('trademark rectification') || 
+        docName.toLowerCase().includes('trademark rectification') ? 'trademarkRectification' :
+        
+        title.toLowerCase().includes('trademark infringement') || 
+        title.toLowerCase().includes('tm infringement') || 
+        urlPath.toLowerCase().includes('trademark infringement') || 
+        urlPath.toLowerCase().includes('tm infringement') || 
+        docName.toLowerCase().includes('trademark infringement') || 
+        docName.toLowerCase().includes('tm infringement') ? 'trademarkInfringementNotice' :
+        
+        // Insurance related documents
+        title.toLowerCase().includes('health insurance') || 
+        urlPath.toLowerCase().includes('health insurance') || 
+        docName.toLowerCase().includes('health insurance') ? 'healthInsuranceClaim' :
+        
+        title.toLowerCase().includes('vehicle insurance') || 
+        urlPath.toLowerCase().includes('vehicle insurance') || 
+        docName.toLowerCase().includes('vehicle insurance') ? 'vehicleInsuranceClaim' :
+        
+        title.toLowerCase().includes('life insurance') || 
+        urlPath.toLowerCase().includes('life insurance') || 
+        docName.toLowerCase().includes('life insurance') ? 'lifeInsuranceClaim' :
+        
+        title.toLowerCase().includes('property insurance') || 
+        title.toLowerCase().includes('homeowner insurance') || 
+        urlPath.toLowerCase().includes('property insurance') || 
+        urlPath.toLowerCase().includes('homeowner insurance') || 
+        docName.toLowerCase().includes('property insurance') || 
+        docName.toLowerCase().includes('homeowner insurance') ? 'propertyInsuranceClaim' :
+        
+        // GST related documents
+        title.toLowerCase().includes('gst') || 
+        urlPath.toLowerCase().includes('gst') || 
+        docName.toLowerCase().includes('gst') ? 'gstRegistration' :
+        
+        // Udyam/MSME related documents
+        title.toLowerCase().includes('udyam') || 
+        title.toLowerCase().includes('msme') || 
+        title.toLowerCase().includes('micro') || 
+        title.toLowerCase().includes('small') || 
+        title.toLowerCase().includes('medium') || 
+        urlPath.toLowerCase().includes('msme') || 
+        docName.toLowerCase().includes('msme') ? 'udyamRegistration' :
+        
+        // Import/Export related documents
+        title.toLowerCase().includes('import') || 
+        title.toLowerCase().includes('export') || 
+        title.toLowerCase().includes('iec') || 
+        urlPath.toLowerCase().includes('import') || 
+        urlPath.toLowerCase().includes('export') || 
+        docName.toLowerCase().includes('import') || 
+        docName.toLowerCase().includes('export') ? 'importExportCompliance' :
+        
+        // FSSAI related documents
+        title.toLowerCase().includes('fssai') || 
+        urlPath.toLowerCase().includes('fssai') || 
+        docName.toLowerCase().includes('fssai') ? 'fssaiLicense' :
+        
+        null;
+    }
+
+    console.log('Detected document type:', foundDocType);
+    console.log('Available document types:', Object.keys(documentContent));
+
+    if (foundDocType && documentContent[foundDocType]) {
+      return documentContent[foundDocType].data;
+    }
+
+    // Default sections for other documents
+    return [
     {
       id: 'intro',
       title: 'Introduction',
@@ -64,6 +236,9 @@ export default function DocumentView() {
       icon: '🔒'
     }
   ];
+  };
+
+  const sections = getSections();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
