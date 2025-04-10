@@ -3,47 +3,348 @@ export const documentContent = {
     data: [
       {
         id: 'intro',
-        title: 'Introduction',
-        content: 'GST (Goods and Services Tax) is an indirect tax levied on the supply of goods and services in India. It aims to unify various indirect taxes into a single tax regime. Businesses with turnover above a specified threshold must register for GST to comply with the law and avail input tax credit.',
+        title: 'Overview',
+        content: 'GST (Goods and Services Tax) registration is mandatory for businesses with turnover above specified thresholds. It enables businesses to collect and remit tax, claim input credits, and conduct interstate business legally.',
         icon: '📝'
       },
       {
-        id: 'eligibility',
-        title: 'Eligibility Criteria',
-        content: 'Mandatory for businesses with aggregate turnover exceeding ₹40 lakhs (₹10 lakhs for NE and hill states). Also required for inter-state suppliers, e-commerce operators, and others specified under GST law.',
-        icon: '📌'
+        id: 'keyTerms',
+        title: 'Key Terms',
+        items: [
+          'GSTIN - GST Identification Number',
+          'Business Turnover - Annual revenue threshold',
+          'Composite Scheme - Simplified tax structure for small businesses',
+          'Regular Scheme - Standard GST scheme with input tax credit'
+        ],
+        icon: '📚'
       },
       {
         id: 'documents',
-        title: 'Documents Required',
+        title: 'Required Documents',
         items: [
           'PAN Card of the business or applicant',
           'Aadhaar Card',
-          'Proof of business registration or incorporation certificate',
-          'Address proof of business (rent agreement/electricity bill)',
-          'Bank account statement or cancelled cheque',
-          'Digital Signature (for companies and LLPs)',
-          'Photograph of the proprietor/partners/directors'
+          'Business Address Proof',
+          'Bank Account Details',
+          'Photograph of Owner',
+          'Digital Signature (for companies)',
+          'Partnership Deed/Company Registration (if applicable)'
         ],
         icon: '📂'
       },
       {
         id: 'process',
         title: 'Registration Process',
-        content: 'Visit the GST portal (https://www.gst.gov.in/), fill the Part A form with basic details. After OTP verification, fill Part B with documents and business information. An ARN is generated for application tracking. Upon successful verification, GSTIN is issued.',
+        items: [
+          'Visit GST portal (www.gst.gov.in)',
+          'Fill out Form GST REG-01',
+          'Upload required documents',
+          'Receive ARN (Application Reference Number)',
+          'Application verification by authorities',
+          'Receive GSTIN and Certificate'
+        ],
         icon: '⚙️'
       },
       {
         id: 'benefits',
-        title: 'Benefits of GST Registration',
+        title: 'Benefits',
         items: [
-          'Legal recognition of business',
-          'Allows interstate sales without restrictions',
-          'Enables claiming of input tax credit',
-          'Facilitates participation in government tenders',
-          'Builds trust with customers and vendors'
+          'Legal compliance with tax regulations',
+          'Ability to collect and claim input tax credit',
+          'Interstate business operations',
+          'Enhanced business credibility',
+          'Access to government tenders'
         ],
         icon: '✅'
+      }
+    ]
+  },
+  gstReturnFiling: {
+    data: [
+      {
+        id: 'intro',
+        title: 'Overview',
+        content: 'GST return filing by professional accountants ensures accurate and timely submission of tax returns, helping businesses maintain compliance and avoid penalties.',
+        icon: '📊'
+      },
+      {
+        id: 'keyTerms',
+        title: 'Key Terms',
+        items: [
+          'GSTR-1 - Monthly/quarterly outward supply return',
+          'GSTR-3B - Monthly summary return',
+          'Input Tax Credit - Tax paid on purchases',
+          'Due Dates - Filing deadlines'
+        ],
+        icon: '📚'
+      },
+      {
+        id: 'documents',
+        title: 'Required Documents',
+        items: [
+          'Sales Invoices',
+          'Purchase Invoices',
+          'Expense Records',
+          'Bank Statements',
+          'Previous Returns',
+          'E-way Bills (if applicable)'
+        ],
+        icon: '📂'
+      },
+      {
+        id: 'process',
+        title: 'Filing Process',
+        items: [
+          'Collect all relevant documents',
+          'Reconcile sales and purchase data',
+          'Calculate tax liability',
+          'Prepare returns (GSTR-1, GSTR-3B)',
+          'File returns on GST portal',
+          'Maintain records for audit'
+        ],
+        icon: '⚙️'
+      },
+      {
+        id: 'benefits',
+        title: 'Benefits',
+        items: [
+          'Professional accuracy in filing',
+          'Timely compliance',
+          'Reduced risk of errors',
+          'Expert handling of complex cases',
+          'Regular compliance monitoring'
+        ],
+        icon: '✅'
+      }
+    ]
+  },
+  gstAnnualReturn: {
+    data: [
+      {
+        id: 'intro',
+        title: 'Overview',
+        content: 'GSTR-9 is the annual return form for regular taxpayers under GST, summarizing all monthly/quarterly returns filed during the financial year.',
+        icon: '📅'
+      },
+      {
+        id: 'keyTerms',
+        title: 'Key Terms',
+        items: [
+          'GSTR-9 - Annual return form',
+          'HSN Summary - Harmonized System of Nomenclature',
+          'Reconciliation Statement',
+          'Annual Aggregate Turnover'
+        ],
+        icon: '📚'
+      },
+      {
+        id: 'documents',
+        title: 'Required Documents',
+        items: [
+          'Monthly GSTR-1 and GSTR-3B filings',
+          'Audited Financial Statements',
+          'Invoice Summary for the year',
+          'ITC reconciliation statements',
+          'Annual financial statements'
+        ],
+        icon: '📂'
+      },
+      {
+        id: 'process',
+        title: 'Filing Process',
+        items: [
+          'Compile yearly GST data',
+          'Reconcile with financial statements',
+          'Fill GSTR-9 form',
+          'Verify all declarations',
+          'Submit on GST portal'
+        ],
+        icon: '⚙️'
+      },
+      {
+        id: 'tips',
+        title: 'Filing Tips',
+        items: [
+          'Start compilation early',
+          'Maintain monthly reconciliations',
+          'Keep track of amendments',
+          'Review ITC claims carefully',
+          'Verify HSN/SAC codes'
+        ],
+        icon: '💡'
+      }
+    ]
+  },
+  gstEInvoicing: {
+    data: [
+      {
+        id: 'intro',
+        title: 'Overview',
+        content: 'GST e-invoicing is mandatory for businesses with turnover above specified limits. It involves generating standardized invoices that can be authenticated through the Invoice Registration Portal (IRP).',
+        icon: '🧾'
+      },
+      {
+        id: 'keyTerms',
+        title: 'Key Terms',
+        items: [
+          'IRN - Invoice Reference Number',
+          'QR Code - Quick Response Code',
+          'IRP - Invoice Registration Portal',
+          'Digital Signature - Electronic authentication'
+        ],
+        icon: '📚'
+      },
+      {
+        id: 'requirements',
+        title: 'System Requirements',
+        items: [
+          'Compatible accounting/billing software',
+          'Internet connectivity',
+          'Digital Signature Certificate',
+          'Valid GSTIN registration'
+        ],
+        icon: '💻'
+      },
+      {
+        id: 'process',
+        title: 'E-Invoicing Process',
+        items: [
+          'Generate invoice in standard format',
+          'Upload to IRP',
+          'Receive signed JSON with IRN',
+          'Generate QR code',
+          'Print final invoice'
+        ],
+        icon: '⚙️'
+      },
+      {
+        id: 'benefits',
+        title: 'Benefits',
+        items: [
+          'Real-time invoice tracking',
+          'Reduced data entry errors',
+          'Automated return filing',
+          'Enhanced compliance',
+          'Faster ITC processing'
+        ],
+        icon: '✅'
+      }
+    ]
+  },
+  gstLutForm: {
+    data: [
+      {
+        id: 'intro',
+        title: 'Overview',
+        content: 'Letter of Undertaking (LUT) allows exporters to export goods or services without payment of integrated tax. It\'s a yearly requirement for businesses engaged in exports.',
+        icon: '📄'
+      },
+      {
+        id: 'keyTerms',
+        title: 'Key Terms',
+        items: [
+          'LUT - Letter of Undertaking',
+          'Zero-rated Supply',
+          'Export without Payment',
+          'IGST Exemption'
+        ],
+        icon: '📚'
+      },
+      {
+        id: 'documents',
+        title: 'Required Documents',
+        items: [
+          'PAN and Aadhaar',
+          'Previous LUT (if applicable)',
+          'Export documents',
+          'Bank account details',
+          'Digital Signature Certificate'
+        ],
+        icon: '📂'
+      },
+      {
+        id: 'process',
+        title: 'Filing Process',
+        items: [
+          'Login to GST portal',
+          'Navigate to LUT filing section',
+          'Fill Form GST RFD-11',
+          'Upload supporting documents',
+          'Submit for approval'
+        ],
+        icon: '⚙️'
+      },
+      {
+        id: 'validity',
+        title: 'Validity and Renewal',
+        items: [
+          'Valid for one financial year',
+          'Must be renewed annually',
+          'Maintain export obligations',
+          'Track LUT number for exports',
+          'Monitor compliance requirements'
+        ],
+        icon: '⏱️'
+      }
+    ]
+  },
+  gstNotice: {
+    data: [
+      {
+        id: 'intro',
+        title: 'Overview',
+        content: 'GST notices are formal communications from tax authorities regarding discrepancies, non-compliance, or information requests. Proper and timely response is crucial to avoid penalties.',
+        icon: '⚠️'
+      },
+      {
+        id: 'types',
+        title: 'Types of Notices',
+        items: [
+          'Show Cause Notice',
+          'Scrutiny Notice',
+          'Demand Notice',
+          'Assessment Notice',
+          'Audit Notice'
+        ],
+        icon: '📋'
+      },
+      {
+        id: 'documents',
+        title: 'Required Documents',
+        items: [
+          'Notice copy',
+          'Filed returns',
+          'Invoice summaries',
+          'Bank statements',
+          'Reconciliation statements',
+          'Supporting evidence'
+        ],
+        icon: '📂'
+      },
+      {
+        id: 'process',
+        title: 'Response Process',
+        items: [
+          'Analyze notice requirements',
+          'Gather supporting documents',
+          'Draft detailed response',
+          'File reply on GST portal',
+          'Track response status',
+          'Follow up if needed'
+        ],
+        icon: '⚙️'
+      },
+      {
+        id: 'tips',
+        title: 'Handling Tips',
+        items: [
+          'Respond within deadlines',
+          'Keep communication records',
+          'Seek professional help if needed',
+          'Maintain proper documentation',
+          'Follow up regularly'
+        ],
+        icon: '💡'
       }
     ]
   },
