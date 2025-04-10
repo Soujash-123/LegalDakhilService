@@ -514,57 +514,21 @@ export const documentContent = {
     data: [
       {
         id: 'intro',
-        title: 'Overview',
-        content: 'Trademark registration is the process of legally securing exclusive rights over a brand name, logo, slogan, or any unique mark that distinguishes goods or services of one entity from another. It protects brand identity and prevents unauthorized usage.',
+        title: 'What is Trademark Registration?',
+        content: 'Trademark Registration is the legal process of securing a brand name, logo, or symbol to distinguish your products or services. It provides exclusive rights to use the mark and legal protection against misuse.',
         icon: '📝'
       },
       {
-        id: 'eligibility',
-        title: 'Eligibility Criteria',
-        items: [
-          'Applicant must be a person, business entity, or legal heir',
-          'Trademark must be distinctive and not similar to existing marks',
-          'The mark should not fall under the prohibited or restricted categories',
-          'Proof of use or intention to use in commerce'
-        ],
+        id: 'importance',
+        title: 'Why Register a Trademark?',
+        content: 'A registered trademark builds brand value, prevents unauthorized use, enables legal protection, and enhances trust with customers.',
         icon: '✅'
       },
       {
-        id: 'documents',
-        title: 'Documents Required',
-        items: [
-          'Applicant\'s ID and address proof',
-          'Logo or trademark representation (optional for word marks)',
-          'Signed TM-48 (Power of Attorney) if filing through an agent',
-          'Proof of usage (if claiming prior use)',
-          'Business registration proof (for entities)'
-        ],
-        icon: '📂'
-      },
-      {
         id: 'process',
-        title: 'Process Steps',
-        items: [
-          'Conduct a trademark search to ensure uniqueness',
-          'File TM-A form online through the IP India portal or via a trademark attorney',
-          'Submit the required documents and pay the applicable fee',
-          'Application is examined by the Trademark Registrar',
-          'If accepted, it gets published in the Trademark Journal',
-          'If no opposition is filed within 4 months, the trademark proceeds to registration'
-        ],
+        title: 'How to Apply?',
+        content: 'Choose a unique mark, conduct a trademark search, file TM-A application with details and documents, and monitor the application progress.',
         icon: '⚙️'
-      },
-      {
-        id: 'rejection',
-        title: 'Common Reasons for Rejection',
-        items: [
-          'Trademark is too generic or descriptive',
-          'Similarity with an existing registered mark',
-          'Lack of proper documentation',
-          'Wrong classification of goods/services',
-          'Trademark falls under prohibited categories'
-        ],
-        icon: '⚠️'
       }
     ]
   },
@@ -572,52 +536,21 @@ export const documentContent = {
     data: [
       {
         id: 'intro',
-        title: 'Overview',
-        content: 'A trademark objection is an initial refusal raised by the Trademark Examiner during the examination stage. It doesn\'t mean rejection but requires the applicant to respond with valid justifications to proceed with the registration.',
+        title: 'What is a Trademark Objection?',
+        content: 'A Trademark Objection is raised by the examiner during the trademark registration process when the mark is found to be similar to an existing one or lacks distinctiveness.',
         icon: '⚠️'
       },
       {
-        id: 'eligibility',
-        title: 'Eligibility Criteria',
-        items: [
-          'Trademark application must be under examination',
-          'Objection must be received officially under Section 9 (descriptive) or Section 11 (similarity)'
-        ],
-        icon: '✅'
+        id: 'reasons',
+        title: 'Common Reasons',
+        content: 'Similarity with existing marks, generic or descriptive terms, offensive or misleading content, incorrect details in application.',
+        icon: '📋'
       },
       {
-        id: 'documents',
-        title: 'Documents Required',
-        items: [
-          'Examination report copy',
-          'Reply to the objection with legal arguments',
-          'Proof of usage (invoices, ads, website screenshots)',
-          'Affidavits and supporting documents (if required)',
-          'Power of Attorney (TM-48)'
-        ],
-        icon: '📂'
-      },
-      {
-        id: 'process',
-        title: 'Process Steps',
-        items: [
-          'Check the status of the application on the IP India website to see if objections are raised',
-          'Obtain the examination report and understand the grounds of objection',
-          'Prepare and file a written reply (Trademark Objection Reply) within 30 days',
-          'Wait for further action — the examiner may accept, call for a hearing, or refuse'
-        ],
-        icon: '⚙️'
-      },
-      {
-        id: 'rejection',
-        title: 'Common Reasons for Objection',
-        items: [
-          'Trademark is too descriptive or lacks distinctiveness',
-          'Similarity to existing marks causing confusion',
-          'Incorrect classification or vague specification',
-          'Offensive or misleading marks'
-        ],
-        icon: '⚠️'
+        id: 'response',
+        title: 'How to Respond?',
+        content: 'Draft a detailed reply (TM-O) addressing the objections with legal justifications and supporting documents. Submit it online within the stipulated time.',
+        icon: '📤'
       }
     ]
   },
@@ -625,50 +558,21 @@ export const documentContent = {
     data: [
       {
         id: 'intro',
-        title: 'Overview',
-        content: 'A trademark certificate is an official document issued by the Trademark Registry that confirms the successful registration of a trademark, granting the holder exclusive rights for 10 years from the date of application.',
+        title: 'What is a Trademark Certificate?',
+        content: 'A Trademark Certificate is the official document issued by the Trademark Registry after successful registration. It grants exclusive rights to use the trademark.',
         icon: '📜'
       },
       {
-        id: 'eligibility',
-        title: 'Eligibility Criteria',
-        items: [
-          'Trademark must have been published and not opposed within the opposition period',
-          'Application must be approved after examination or hearing',
-          'All formalities and fees must be completed'
-        ],
-        icon: '✅'
-      },
-      {
-        id: 'documents',
-        title: 'Documents Required',
-        items: [
-          'Application number or acknowledgement',
-          'Login credentials for IP India portal',
-          'Authorization letter if downloaded by agent'
-        ],
-        icon: '📂'
-      },
-      {
-        id: 'process',
-        title: 'Process Steps',
-        items: [
-          'Complete the registration process without any unresolved objections or oppositions',
-          'Wait for the final approval from the Registrar',
-          'Download the Trademark Registration Certificate from the IP India portal under the application status'
-        ],
-        icon: '⚙️'
-      },
-      {
-        id: 'delay',
-        title: 'Common Reasons for Delay',
-        items: [
-          'Pending opposition cases',
-          'Failure to respond to objections',
-          'Clerical delays in processing',
-          'Incomplete formalities or documentation'
-        ],
+        id: 'validity',
+        title: 'Validity',
+        content: 'The certificate is valid for 10 years from the date of registration and can be renewed indefinitely.',
         icon: '⏱️'
+      },
+      {
+        id: 'usage',
+        title: 'Usage',
+        content: 'The certificate can be used to enforce trademark rights and take legal action in case of infringement.',
+        icon: '⚖️'
       }
     ]
   },
@@ -676,54 +580,21 @@ export const documentContent = {
     data: [
       {
         id: 'intro',
-        title: 'Overview',
-        content: 'Trademark opposition is a legal process in which a third party objects to the registration of a published trademark, typically on the grounds of similarity, prior use, or bad faith.',
-        icon: '⚖️'
+        title: 'What is Trademark Opposition?',
+        content: 'Trademark Opposition is when a third party files a notice opposing a trademark application during the advertisement stage in the journal.',
+        icon: '🚫'
       },
       {
-        id: 'eligibility',
-        title: 'Eligibility Criteria',
-        items: [
-          'Anyone (individual or entity) can oppose within 4 months from publication in Trademark Journal',
-          'Opponent must have sufficient grounds and evidence'
-        ],
-        icon: '✅'
+        id: 'grounds',
+        title: 'Grounds for Opposition',
+        content: 'Prior use or registration, deceptive similarity, lack of distinctiveness, or bad faith application.',
+        icon: '📋'
       },
       {
-        id: 'documents',
-        title: 'Documents Required',
-        items: [
-          'Form TM-O',
-          'Statement of opposition (with evidence)',
-          'Proof of prior use (if applicable)',
-          'Affidavits, brochures, sales records',
-          'Power of Attorney'
-        ],
-        icon: '📂'
-      },
-      {
-        id: 'process',
-        title: 'Process Steps',
-        items: [
-          'Monitor Trademark Journal for conflicting marks',
-          'File Form TM-O with grounds of opposition within the 4-month window',
-          'Serve a copy to the applicant',
-          'Applicant must file a counter-statement within 2 months',
-          'Evidence is exchanged and a hearing may be scheduled',
-          'Registrar decides to uphold or reject the opposition'
-        ],
-        icon: '⚙️'
-      },
-      {
-        id: 'reasons',
-        title: 'Common Reasons for Opposition',
-        items: [
-          'Similarity with registered or well-known trademarks',
-          'Trademark applied in bad faith',
-          'Violation of geographical indications or public morality',
-          'Trademark likely to confuse or deceive consumers'
-        ],
-        icon: '⚠️'
+        id: 'filing',
+        title: 'Filing an Opposition',
+        content: 'Opposition must be filed using Form TM-O within 4 months of the mark\'s publication.',
+        icon: '📤'
       }
     ]
   },
@@ -731,53 +602,21 @@ export const documentContent = {
     data: [
       {
         id: 'intro',
-        title: 'Overview',
-        content: 'A trademark hearing is a formal interaction between the applicant or opponent and the Trademark Officer, scheduled when the case requires further clarifications after an objection or opposition.',
+        title: 'What is a Trademark Hearing?',
+        content: 'A Trademark Hearing is a personal appearance or video conference with the registrar to defend the application in case of objections or oppositions.',
         icon: '👥'
       },
       {
-        id: 'eligibility',
-        title: 'Eligibility Criteria',
-        items: [
-          'Scheduled due to unanswered objections or opposition',
-          'Applicant or opponent must attend on the assigned date'
-        ],
-        icon: '✅'
+        id: 'preparation',
+        title: 'Preparation Tips',
+        content: 'Compile supporting evidence, legal precedents, usage proof, and authorized representations.',
+        icon: '📋'
       },
       {
-        id: 'documents',
-        title: 'Documents Required',
-        items: [
-          'Hearing notice',
-          'Copy of application or opposition',
-          'Written arguments and evidence',
-          'Authorization letter or Power of Attorney',
-          'Any supplementary documents relevant to the case'
-        ],
-        icon: '📂'
-      },
-      {
-        id: 'process',
-        title: 'Process Steps',
-        items: [
-          'Check hearing notice and note date, time, and venue (or video conferencing link)',
-          'Prepare a brief and legal arguments, and gather all necessary evidence',
-          'Attend the hearing with or through a legal representative',
-          'Submit additional documents, if asked by the hearing officer',
-          'Await the final decision – acceptance, refusal, or adjournment'
-        ],
-        icon: '⚙️'
-      },
-      {
-        id: 'adjournment',
-        title: 'Common Reasons for Adjournment',
-        items: [
-          'Non-appearance by parties',
-          'Request for more time to submit evidence',
-          'Technical issues (for online hearings)',
-          'Incomplete documentation'
-        ],
-        icon: '⏱️'
+        id: 'outcomes',
+        title: 'Outcomes',
+        content: 'The registrar may accept, reject, or adjourn the case based on presented arguments.',
+        icon: '⚖️'
       }
     ]
   },
@@ -785,110 +624,724 @@ export const documentContent = {
     data: [
       {
         id: 'intro',
-        title: 'Overview',
-        content: 'Trademark rectification is the legal process of correcting or removing an error or wrongful entry in the Trademark Register. It can be filed by the registered owner or any third party.',
+        title: 'What is Trademark Rectification?',
+        content: 'Rectification is the legal procedure to correct errors or remove wrongly registered trademarks from the register.',
         icon: '✏️'
       },
       {
-        id: 'eligibility',
-        title: 'Eligibility Criteria',
-        items: [
-          'Trademark is wrongly registered or remaining on the register without sufficient cause',
-          'Grounds of non-use, abandonment, or error in entry',
-          'Petitioner must be an interested party'
-        ],
-        icon: '✅'
+        id: 'when',
+        title: 'When to File?',
+        content: 'Wrong entry due to mistake, non-use, contravention of conditions, or mark obtained by fraud.',
+        icon: '📅'
       },
       {
-        id: 'documents',
-        title: 'Documents Required',
-        items: [
-          'Form TM-O',
-          'Grounds and evidence for rectification',
-          'Affidavits, usage evidence, or proof of error',
-          'Power of Attorney',
-          'Counter-statements (if responding)'
-        ],
-        icon: '📂'
-      },
-      {
-        id: 'process',
-        title: 'Process Steps',
-        items: [
-          'File Form TM-O for rectification or cancellation of the registered trademark',
-          'Mention clear grounds such as error, fraud, non-use, or misrepresentation',
-          'Serve a copy to the trademark owner',
-          'The owner may respond with a counter-statement',
-          'Evidence may be submitted, and a hearing will be scheduled',
-          'Registrar issues decision to retain, remove, or modify the mark'
-        ],
+        id: 'procedure',
+        title: 'Procedure',
+        content: 'Application is filed with the appropriate grounds and evidence for rectification before the IPAB or Trademark Registry.',
         icon: '⚙️'
-      },
-      {
-        id: 'reasons',
-        title: 'Common Reasons for Rectification',
-        items: [
-          'Trademark wrongly remaining on register',
-          'Trademark not used for 5 years or more',
-          'Registration obtained through fraud or misrepresentation',
-          'Clerical or procedural errors in entries'
-        ],
-        icon: '⚠️'
       }
     ]
   },
-  trademarkInfringementNotice: {
+  tmInfringementNotice: {
     data: [
       {
         id: 'intro',
-        title: 'Overview',
-        content: 'A TM (Trademark) Infringement Notice is a legal communication sent to an individual or business that is allegedly using a registered trademark without authorization. It serves as an initial warning before taking legal action.',
+        title: 'What is a TM Infringement Notice?',
+        content: 'A legal notice issued to a party for unauthorized use of a registered trademark. It serves as a warning before legal action.',
+        icon: '⚠️'
+      },
+      {
+        id: 'contents',
+        title: 'Contents of the Notice',
+        content: 'Details of the trademark, nature of infringement, cease-and-desist demands, and possible legal consequences.',
+        icon: '📋'
+      },
+      {
+        id: 'nextSteps',
+        title: 'Next Steps',
+        content: 'If the infringer does not comply, a lawsuit may be filed in a competent court.',
         icon: '⚖️'
+      }
+    ]
+  },
+  trademarkRenewal: {
+    data: [
+      {
+        id: 'intro',
+        title: 'What is Trademark Renewal?',
+        content: 'Renewal is the process of extending the validity of a trademark registration beyond 10 years.',
+        icon: '🔄'
+      },
+      {
+        id: 'timing',
+        title: 'When to Apply?',
+        content: 'Apply 6 months before expiry using Form TM-R. Late renewal is possible within 1 year with a surcharge.',
+        icon: '⏱️'
+      },
+      {
+        id: 'benefits',
+        title: 'Benefits',
+        content: 'Ensures uninterrupted legal protection and brand value continuity.',
+        icon: '✅'
+      }
+    ]
+  },
+  trademarkTransfer: {
+    data: [
+      {
+        id: 'intro',
+        title: 'What is Trademark Transfer?',
+        content: 'Transfer or assignment refers to the legal transfer of ownership or rights of a trademark to another party.',
+        icon: '🔄'
+      },
+      {
+        id: 'types',
+        title: 'Types of Assignment',
+        content: 'Complete assignment, partial assignment, assignment with goodwill, and without goodwill.',
+        icon: '📋'
+      },
+      {
+        id: 'procedure',
+        title: 'Filing Procedure',
+        content: 'Submit Form TM-P with assignment deed and requisite fee to the Registry.',
+        icon: '📤'
+      }
+    ]
+  },
+  expeditedTmRegistration: {
+    data: [
+      {
+        id: 'intro',
+        title: 'What is Expedited TM Registration?',
+        content: 'A fast-track process under Rule 34 of Trademark Rules, allowing quicker processing of trademark applications.',
+        icon: '⚡'
       },
       {
         id: 'eligibility',
-        title: 'Eligibility Criteria',
+        title: 'Eligibility',
+        content: 'Applicable only at the time of initial filing with requisite Form TM-M and additional fee.',
+        icon: '✅'
+      },
+      {
+        id: 'timelines',
+        title: 'Timelines',
+        content: 'Expedited process may result in registration within 6-8 months, compared to regular 12-18 months.',
+        icon: '⏱️'
+      }
+    ]
+  },
+  usaTrademarkRegistration: {
+    data: [
+      {
+        id: 'intro',
+        title: 'What is USA Trademark Registration?',
+        content: 'It is the process of registering a trademark with the United States Patent and Trademark Office (USPTO) to protect your brand in the US.',
+        icon: '🇺🇸'
+      },
+      {
+        id: 'options',
+        title: 'Filing Options',
+        content: 'Use-based application (if already in use) or intent-to-use application.',
+        icon: '📋'
+      },
+      {
+        id: 'process',
+        title: 'Process',
+        content: 'Search via TESS, file online via TEAS, examination by USPTO, publication in Gazette, and final registration.',
+        icon: '⚙️'
+      }
+    ]
+  },
+  internationalTrademark: {
+    data: [
+      {
+        id: 'intro',
+        title: 'What is International Trademark?',
+        content: 'A trademark registered under the Madrid Protocol allows protection in multiple countries using a single application.',
+        icon: '🌐'
+      },
+      {
+        id: 'process',
+        title: 'How It Works',
+        content: 'File through the home country office, WIPO processes and forwards to designated countries.',
+        icon: '⚙️'
+      },
+      {
+        id: 'benefits',
+        title: 'Benefits',
+        content: 'Simplifies filing and management of global trademark rights.',
+        icon: '✅'
+      }
+    ]
+  },
+  designRegistration: {
+    data: [
+      {
+        id: 'intro',
+        title: 'What is Design Registration?',
+        content: 'Legal protection granted for the unique shape, configuration, pattern, or ornamentation of an article.',
+        icon: '🎨'
+      },
+      {
+        id: 'importance',
+        title: 'Importance',
+        content: 'Protects aesthetic features of a product and prevents unauthorized copying.',
+        icon: '✅'
+      },
+      {
+        id: 'process',
+        title: 'Process',
+        content: 'File Form 1 with representations, classification, and necessary fees.',
+        icon: '⚙️'
+      }
+    ]
+  },
+  designObjection: {
+    data: [
+      {
+        id: 'intro',
+        title: 'What is Design Objection?',
+        content: 'A Design Objection is raised by the Design Office when the design is not original, lacks novelty, or is similar to existing ones. It is a formal communication indicating that the design application does not meet the requirements for registration under the Designs Act.',
+        icon: '⚠️'
+      },
+      {
+        id: 'reasons',
+        title: 'Common Reasons for Design Objection',
         items: [
-          'Trademark must be registered and valid',
-          'Unauthorized use by third-party must be evident',
-          'The usage must cause confusion or dilution of brand identity'
+          'Design lacks novelty or originality',
+          'Design is already registered or published',
+          'Design is functional rather than aesthetic',
+          'Design is contrary to public order or morality',
+          'Insufficient or unclear representations',
+          'Design is not a "design" as defined in the Act'
+        ],
+        icon: '📋'
+      },
+      {
+        id: 'response',
+        title: 'How to Respond to Design Objection',
+        items: [
+          'File a response within 3 months from the date of objection',
+          'Address each objection point with clear arguments',
+          'Provide additional evidence or modified representations if needed',
+          'Consider seeking professional legal assistance for complex objections',
+          'Ensure all documentation is properly formatted and submitted'
+        ],
+        icon: '📤'
+      },
+      {
+        id: 'timing',
+        title: 'Importance of Timely Action',
+        content: 'Delays in replying may lead to rejection of the design application. The response must be filed within the stipulated time frame to avoid abandonment of the application.',
+        icon: '⏱️'
+      },
+      {
+        id: 'outcome',
+        title: 'Possible Outcomes',
+        items: [
+          'Acceptance of the design application after addressing objections',
+          'Rejection if objections cannot be overcome',
+          'Request for additional information or clarification',
+          'Hearing may be scheduled for complex cases'
+        ],
+        icon: '⚖️'
+      }
+    ]
+  },
+  patentRegistration: {
+    data: [
+      {
+        id: 'intro',
+        title: 'What is Patent Registration?',
+        content: 'Patent Registration is a legal process that grants exclusive rights to an inventor for their invention. It provides protection against unauthorized use, manufacture, or sale of the invention for a specified period, typically 20 years from the filing date.',
+        icon: '🔬'
+      },
+      {
+        id: 'types',
+        title: 'Types of Patents',
+        items: [
+          'Utility Patents - For new processes, machines, compositions of matter',
+          'Design Patents - For new ornamental designs of articles',
+          'Plant Patents - For new varieties of plants',
+          'Software Patents - For computer-implemented inventions',
+          'Pharmaceutical Patents - For new drugs and medical compounds'
+        ],
+        icon: '📋'
+      },
+      {
+        id: 'eligibility',
+        title: 'Patent Eligibility Criteria',
+        items: [
+          'Invention must be novel (new)',
+          'Must have inventive step (non-obvious)',
+          'Must be capable of industrial application',
+          'Must not fall under non-patentable subject matter',
+          'Must be fully disclosed in the application'
         ],
         icon: '✅'
       },
       {
         id: 'documents',
-        title: 'Documents Required',
+        title: 'Required Documents',
         items: [
-          'Trademark registration certificate',
-          'Proof of ownership and usage',
-          'Details and evidence of infringement',
-          'Copy of the infringing content',
-          'Draft of the legal notice'
+          'Complete patent specification',
+          'Drawings and diagrams of the invention',
+          'Priority documents (if claiming priority)',
+          'Assignment deed (if applicable)',
+          'Power of Attorney',
+          'Proof of right to apply',
+          'Information and Undertaking Form'
         ],
         icon: '📂'
       },
       {
         id: 'process',
-        title: 'Process Steps',
+        title: 'Patent Filing Process',
         items: [
-          'Identify the infringing use through investigation or market observation',
-          'Draft a legal notice citing the registered mark and nature of infringement',
-          'Serve the notice to the infringing party through email, courier, or legal counsel',
-          'Wait for the response or compliance',
-          'If ignored, proceed with civil or criminal legal action under the Trade Marks Act'
+          'Conduct patent search to ensure novelty',
+          'Prepare and file provisional/complete specification',
+          'Publication of application after 18 months',
+          'Request for examination',
+          'Respond to examination report',
+          'Grant and publication of patent',
+          'Regular maintenance fee payment'
         ],
         icon: '⚙️'
       },
       {
-        id: 'reasons',
-        title: 'Common Reasons for Infringement Action',
+        id: 'timeline',
+        title: 'Important Timelines',
         items: [
-          'Use of identical or deceptively similar mark',
-          'Misleading branding that causes confusion',
-          'Dilution or tarnishing of a reputed mark',
-          'Unauthorized commercial use of a protected trademark'
+          'File complete specification within 12 months of provisional filing',
+          'Request examination within 48 months of filing',
+          'Respond to examination report within 6 months',
+          'Patent term: 20 years from filing date',
+          'Annual renewal fees payment schedule'
         ],
+        icon: '⏱️'
+      },
+      {
+        id: 'rights',
+        title: 'Rights Granted',
+        items: [
+          'Exclusive right to make, use, and sell the invention',
+          'Right to license the patent to others',
+          'Right to transfer or sell the patent',
+          'Right to take legal action against infringement',
+          'Right to mark products as patented'
+        ],
+        icon: '⚖️'
+      }
+    ]
+  },
+  copyrightRegistration: {
+    data: [
+      {
+        id: 'intro',
+        title: 'What is Copyright Registration?',
+        content: 'Copyright Registration provides legal protection to original literary, artistic, musical, and software works against unauthorized usage. It establishes a public record of ownership and is essential for enforcing copyright in court.',
+        icon: '📚'
+      },
+      {
+        id: 'eligibleWorks',
+        title: 'Eligible Works for Copyright',
+        items: [
+          'Literary works (books, articles, computer programs)',
+          'Artistic works (paintings, sculptures, photographs)',
+          'Musical works (compositions, lyrics)',
+          'Cinematographic films',
+          'Sound recordings',
+          'Architectural works',
+          'Dramatic works (plays, choreography)'
+        ],
+        icon: '✅'
+      },
+      {
+        id: 'process',
+        title: 'Filing Steps',
+        items: [
+          'Prepare the work for submission (copies, formats)',
+          'Fill out the copyright application form',
+          'Pay the required registration fee',
+          'Submit the application with the Copyright Office',
+          'Wait for the objection period (30 days)',
+          'Receive the registration certificate if no objections'
+        ],
+        icon: '⚙️'
+      },
+      {
+        id: 'documents',
+        title: 'Required Documents',
+        items: [
+          'Completed application form',
+          'Copies of the work to be registered',
+          'Identity proof of the applicant',
+          'Authorization letter (if applying through an agent)',
+          'No Objection Certificate from co-authors (if applicable)',
+          'Power of Attorney (if applying through an attorney)'
+        ],
+        icon: '📂'
+      },
+      {
+        id: 'rights',
+        title: 'Rights Granted',
+        items: [
+          'Exclusive right to reproduce the work',
+          'Right to distribute copies of the work',
+          'Right to perform or display the work publicly',
+          'Right to create derivative works',
+          'Right to sell or transfer copyright',
+          'Right to prevent others from using the work without permission'
+        ],
+        icon: '✅'
+      },
+      {
+        id: 'duration',
+        title: 'Duration of Copyright',
+        content: 'Copyright protection typically lasts for the lifetime of the author plus 60 years after death. For works of joint authorship, the term is calculated from the death of the last surviving author. For anonymous works, the term is 60 years from the date of publication.',
+        icon: '⏱️'
+      }
+    ]
+  },
+  copyrightObjection: {
+    data: [
+      {
+        id: 'intro',
+        title: 'What is Copyright Objection?',
+        content: 'Raised when another party claims similar or prior rights over the submitted work.',
         icon: '⚠️'
+      },
+      {
+        id: 'response',
+        title: 'How to Handle',
+        content: 'Respond with supporting documents, usage proof, and legal explanation within the objection period.',
+        icon: '📤'
+      },
+      {
+        id: 'outcome',
+        title: 'Outcome',
+        content: 'Registrar may approve, reject, or call for a hearing based on the merit of the response.',
+        icon: '⚖️'
+      }
+    ]
+  },
+  businessAgreement: {
+    data: [
+      {
+        id: 'intro',
+        title: 'What is Business Agreement?',
+        content: 'A Business Agreement outlines the terms and conditions between two or more parties entering into a business relationship. This could include joint ventures, partnerships, or any other collaborative effort.',
+        icon: '📋'
+      },
+      {
+        id: 'keyTerms',
+        title: 'Key Terms',
+        items: [
+          'Parties Involved - Clear identification of all participating entities',
+          'Scope of Work - Detailed description of business activities',
+          'Compensation - Payment terms and financial arrangements',
+          'Confidentiality - Protection of sensitive information',
+          'Termination Clause - Conditions for ending the agreement',
+          'Dispute Resolution - Process for handling disagreements'
+        ],
+        icon: '📝'
+      },
+      {
+        id: 'documents',
+        title: 'Required Documents',
+        items: [
+          'ID Proofs of all Parties',
+          'Business Registration Certificates',
+          'Previous Agreements (if any)',
+          'Proof of Ownership (Assets/Intellectual Property)'
+        ],
+        icon: '📂'
+      },
+      {
+        id: 'process',
+        title: 'Agreement Process',
+        items: [
+          'Define business purpose and goals',
+          'Draft agreement with all essential clauses',
+          'Mutual review and legal vetting',
+          'Sign the agreement',
+          'Notarization or registration (if required)'
+        ],
+        icon: '⚙️'
+      }
+    ]
+  },
+  mou: {
+    data: [
+      {
+        id: 'intro',
+        title: 'What is MOU?',
+        content: 'A Memorandum of Understanding (MoU) is a non-binding agreement that outlines the terms and details of a mutual understanding between two or more parties.',
+        icon: '📄'
+      },
+      {
+        id: 'keyTerms',
+        title: 'Key Terms',
+        items: [
+          'Purpose of MoU - Clear objectives and goals',
+          'Responsibilities of Each Party - Defined roles and duties',
+          'Time Frame - Duration and milestones',
+          'Confidentiality Clause - Information protection',
+          'Amendment and Termination - Modification and ending terms'
+        ],
+        icon: '📝'
+      },
+      {
+        id: 'documents',
+        title: 'Required Documents',
+        items: [
+          'ID and Authorization Proofs',
+          'Outline of Proposed Activities',
+          'Business Licenses (if applicable)'
+        ],
+        icon: '📂'
+      },
+      {
+        id: 'process',
+        title: 'MOU Process',
+        items: [
+          'Discussion and consensus on objectives',
+          'Drafting the MoU',
+          'Internal approvals',
+          'Signature of all parties involved',
+          'Optional notarization'
+        ],
+        icon: '⚙️'
+      }
+    ]
+  },
+  franchiseAgreement: {
+    data: [
+      {
+        id: 'intro',
+        title: 'What is Franchise Agreement?',
+        content: 'A Franchise Agreement is a legally binding document that outlines the relationship between a franchisor and a franchisee.',
+        icon: '🏪'
+      },
+      {
+        id: 'keyTerms',
+        title: 'Key Terms',
+        items: [
+          'Franchise Fees - Initial and ongoing payments',
+          'Territory - Defined operational area',
+          'Training & Support - Assistance provided',
+          'Brand Guidelines - Usage and standards',
+          'Royalty Payments - Recurring fees',
+          'Duration & Renewal - Term and extension',
+          'Termination Conditions - End of agreement terms'
+        ],
+        icon: '📝'
+      },
+      {
+        id: 'documents',
+        title: 'Required Documents',
+        items: [
+          'Franchise Disclosure Document (FDD)',
+          'Business Registration Documents',
+          'ID & Address Proofs',
+          'Non-Disclosure Agreements'
+        ],
+        icon: '📂'
+      },
+      {
+        id: 'process',
+        title: 'Agreement Process',
+        items: [
+          'Due diligence and FDD review',
+          'Negotiation of agreement terms',
+          'Signing of agreement',
+          'Payment of fees',
+          'Onboarding and training'
+        ],
+        icon: '⚙️'
+      }
+    ]
+  },
+  propertyTransferAgreement: {
+    data: [
+      {
+        id: 'intro',
+        title: 'What is Property Transfer Agreement?',
+        content: 'This agreement is used to legally transfer ownership of property (movable or immovable) from one party to another.',
+        icon: '🏠'
+      },
+      {
+        id: 'keyTerms',
+        title: 'Key Terms',
+        items: [
+          'Property Description - Detailed specifications',
+          'Consideration Amount - Transfer value',
+          'Transfer Date - Execution timeline',
+          'Warranties - Guarantees provided',
+          'Indemnities - Protection clauses',
+          'Legal Compliance - Regulatory requirements'
+        ],
+        icon: '📝'
+      },
+      {
+        id: 'documents',
+        title: 'Required Documents',
+        items: [
+          'Title Deed',
+          'Government ID Proofs',
+          'Encumbrance Certificate',
+          'Property Tax Receipts',
+          'No Objection Certificates (if needed)'
+        ],
+        icon: '📂'
+      },
+      {
+        id: 'process',
+        title: 'Transfer Process',
+        items: [
+          'Property due diligence',
+          'Drafting of agreement',
+          'Stamp duty payment',
+          'Registration at sub-registrar office',
+          'Mutation of property records'
+        ],
+        icon: '⚙️'
+      }
+    ]
+  },
+  technologyAgreement: {
+    data: [
+      {
+        id: 'intro',
+        title: 'What is Technology & Software Agreement?',
+        content: 'A Technology & Software Agreement governs the licensing, development, and usage of software or technological solutions between parties.',
+        icon: '💻'
+      },
+      {
+        id: 'keyTerms',
+        title: 'Key Terms',
+        items: [
+          'Licensing Terms - Usage rights and restrictions',
+          'Service Level Agreements - Performance standards',
+          'Ownership of Code - IP rights',
+          'Maintenance & Support - Service terms',
+          'Termination - End conditions',
+          'Warranties & Indemnities - Legal protections'
+        ],
+        icon: '📝'
+      },
+      {
+        id: 'documents',
+        title: 'Required Documents',
+        items: [
+          'Software Specification Documents',
+          'ID and Authorization Proofs',
+          'IP Registration (if applicable)',
+          'Technical Documentation'
+        ],
+        icon: '📂'
+      },
+      {
+        id: 'process',
+        title: 'Agreement Process',
+        items: [
+          'Requirement analysis',
+          'Agreement drafting',
+          'Approval by legal teams',
+          'Signing of the contract',
+          'Implementation & Monitoring'
+        ],
+        icon: '⚙️'
+      }
+    ]
+  },
+  employmentContract: {
+    data: [
+      {
+        id: 'intro',
+        title: 'What is Employment Contract?',
+        content: 'These contracts formalize the employment relationship, detailing job responsibilities, compensation, and other terms between employer and employee.',
+        icon: '👥'
+      },
+      {
+        id: 'keyTerms',
+        title: 'Key Terms',
+        items: [
+          'Job Role - Position and responsibilities',
+          'Compensation - Salary and benefits',
+          'Working Hours - Schedule and timing',
+          'Leave Policy - Time off terms',
+          'Termination - End of employment conditions',
+          'Non-compete Clause - Post-employment restrictions'
+        ],
+        icon: '📝'
+      },
+      {
+        id: 'documents',
+        title: 'Required Documents',
+        items: [
+          'Offer Letter',
+          'ID and Address Proof',
+          'Educational Certificates',
+          'Previous Employment Documents'
+        ],
+        icon: '📂'
+      },
+      {
+        id: 'process',
+        title: 'Contract Process',
+        items: [
+          'Interview and selection',
+          'Offer issuance',
+          'Contract signing',
+          'Onboarding process'
+        ],
+        icon: '⚙️'
+      }
+    ]
+  },
+  serviceProviderContract: {
+    data: [
+      {
+        id: 'intro',
+        title: 'What is Service Provider Contract?',
+        content: 'A contract between a service provider and a client specifying the scope, terms, and cost of services to be provided.',
+        icon: '🤝'
+      },
+      {
+        id: 'keyTerms',
+        title: 'Key Terms',
+        items: [
+          'Scope of Services - Detailed service description',
+          'Payment Terms - Fee structure and schedule',
+          'Timeline - Service delivery schedule',
+          'Service Level Agreements - Performance metrics',
+          'Confidentiality - Data protection terms',
+          'Termination Clause - Contract end conditions'
+        ],
+        icon: '📝'
+      },
+      {
+        id: 'documents',
+        title: 'Required Documents',
+        items: [
+          'Company Registration Certificate',
+          'Service Proposal',
+          'ID Proofs',
+          'Professional Certifications'
+        ],
+        icon: '📂'
+      },
+      {
+        id: 'process',
+        title: 'Contract Process',
+        items: [
+          'Service scope discussion',
+          'Draft agreement preparation',
+          'Legal review and modifications',
+          'Contract execution'
+        ],
+        icon: '⚙️'
       }
     ]
   }

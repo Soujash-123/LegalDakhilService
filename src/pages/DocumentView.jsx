@@ -58,34 +58,75 @@ export default function DocumentView() {
       }
     }
     
-    // Check if the document is in the Trademark section
-    else if (urlPath.includes('/docs/Trademark/') || docName.toLowerCase().includes('trademark')) {
-      if (urlPath.includes('Registration') || docName.toLowerCase().includes('registration')) {
-        foundDocType = 'trademarkRegistration';
-      } else if (urlPath.includes('Objection') || docName.toLowerCase().includes('objection')) {
-        foundDocType = 'trademarkObjection';
-      } else if (urlPath.includes('Certificate') || docName.toLowerCase().includes('certificate')) {
-        foundDocType = 'trademarkCertificate';
-      } else if (urlPath.includes('Opposition') || docName.toLowerCase().includes('opposition')) {
-        foundDocType = 'trademarkOpposition';
-      } else if (urlPath.includes('Hearing') || docName.toLowerCase().includes('hearing')) {
-        foundDocType = 'trademarkHearing';
-      } else if (urlPath.includes('Rectification') || docName.toLowerCase().includes('rectification')) {
-        foundDocType = 'trademarkRectification';
-      } else if (urlPath.includes('Infringement') || docName.toLowerCase().includes('infringement')) {
-        foundDocType = 'trademarkInfringementNotice';
-      }
-    }
-    
     // If not found in Startup section, check other sections
     if (!foundDocType) {
+      // Check if the document is in the Trademark section
+      if (urlPath.includes('/docs/Trademark/') || docName.toLowerCase().includes('trademark')) {
+        if (urlPath.includes('Registration') || docName.toLowerCase().includes('registration')) {
+          foundDocType = 'trademarkRegistration';
+        } else if (urlPath.includes('Objection') || docName.toLowerCase().includes('objection')) {
+          foundDocType = 'trademarkObjection';
+        } else if (urlPath.includes('Certificate') || docName.toLowerCase().includes('certificate')) {
+          foundDocType = 'trademarkCertificate';
+        } else if (urlPath.includes('Opposition') || docName.toLowerCase().includes('opposition')) {
+          foundDocType = 'trademarkOpposition';
+        } else if (urlPath.includes('Hearing') || docName.toLowerCase().includes('hearing')) {
+          foundDocType = 'trademarkHearing';
+        } else if (urlPath.includes('Rectification') || docName.toLowerCase().includes('rectification')) {
+          foundDocType = 'trademarkRectification';
+        } else if (urlPath.includes('Infringement') || docName.toLowerCase().includes('infringement')) {
+          foundDocType = 'tmInfringementNotice';
+        } else if (urlPath.includes('Renewal') || docName.toLowerCase().includes('renewal')) {
+          foundDocType = 'trademarkRenewal';
+        } else if (urlPath.includes('Transfer') || docName.toLowerCase().includes('transfer')) {
+          foundDocType = 'trademarkTransfer';
+        } else if (urlPath.includes('Expedited') || docName.toLowerCase().includes('expedited')) {
+          foundDocType = 'expeditedTmRegistration';
+        } else if (urlPath.includes('USA') || docName.toLowerCase().includes('usa')) {
+          foundDocType = 'usaTrademarkRegistration';
+        } else if (urlPath.includes('International') || docName.toLowerCase().includes('international')) {
+          foundDocType = 'internationalTrademark';
+        }
+      }
       // Check if the document is in the Copyright section
-      if (urlPath.includes('/docs/Copyright/') || docName.toLowerCase().includes('copyright')) {
-        // Use default sections for copyright documents
+      else if (urlPath.includes('/docs/Copyright/') || docName.toLowerCase().includes('copyright') || docName.toLowerCase().includes('patent')) {
+        if (docName.toLowerCase().includes('patent') || title.toLowerCase().includes('patent')) {
+          if (urlPath.includes('Registration') || docName.toLowerCase().includes('registration')) {
+            foundDocType = 'patentRegistration';
+          }
+        } else {
+          if (urlPath.includes('Registration') || docName.toLowerCase().includes('registration')) {
+            foundDocType = 'copyrightRegistration';
+          } else if (urlPath.includes('Objection') || docName.toLowerCase().includes('objection')) {
+            foundDocType = 'copyrightObjection';
+          }
+        }
+      }
+      // Check if the document is in the Design section
+      else if (urlPath.includes('/docs/Design/') || docName.toLowerCase().includes('design')) {
+        if (urlPath.includes('Registration') || docName.toLowerCase().includes('registration')) {
+          foundDocType = 'designRegistration';
+        } else if (urlPath.includes('Objection') || docName.toLowerCase().includes('objection')) {
+          foundDocType = 'designObjection';
+        }
       }
       // Check if the document is in the Agreement section
-      else if (urlPath.includes('/docs/Agreement/') || docName.toLowerCase().includes('agreement')) {
-        // Use default sections for agreement documents
+      else if (urlPath.includes('/docs/Agreement/') || docName.toLowerCase().includes('agreement') || docName.toLowerCase().includes('contract') || docName.toLowerCase().includes('mou')) {
+        if (docName.toLowerCase().includes('business')) {
+          foundDocType = 'businessAgreement';
+        } else if (docName.toLowerCase().includes('mou')) {
+          foundDocType = 'mou';
+        } else if (docName.toLowerCase().includes('franchise')) {
+          foundDocType = 'franchiseAgreement';
+        } else if (docName.toLowerCase().includes('property') && docName.toLowerCase().includes('transfer')) {
+          foundDocType = 'propertyTransferAgreement';
+        } else if (docName.toLowerCase().includes('technology') || docName.toLowerCase().includes('software')) {
+          foundDocType = 'technologyAgreement';
+        } else if (docName.toLowerCase().includes('employment') || docName.toLowerCase().includes('worker')) {
+          foundDocType = 'employmentContract';
+        } else if (docName.toLowerCase().includes('service') && docName.toLowerCase().includes('provider')) {
+          foundDocType = 'serviceProviderContract';
+        }
       }
       // Check if the document is in the Contract section
       else if (urlPath.includes('/docs/Contract/') || docName.toLowerCase().includes('contract')) {
@@ -109,6 +150,36 @@ export default function DocumentView() {
     // If still not found, use keyword matching
     if (!foundDocType) {
       foundDocType = 
+        // Agreement related documents
+        title.toLowerCase().includes('business agreement') || 
+        urlPath.toLowerCase().includes('business agreement') || 
+        docName.toLowerCase().includes('business agreement') ? 'businessAgreement' :
+        
+        title.toLowerCase().includes('mou') || 
+        urlPath.toLowerCase().includes('mou') || 
+        docName.toLowerCase().includes('mou') ? 'mou' :
+        
+        title.toLowerCase().includes('franchise agreement') || 
+        urlPath.toLowerCase().includes('franchise agreement') || 
+        docName.toLowerCase().includes('franchise agreement') ? 'franchiseAgreement' :
+        
+        title.toLowerCase().includes('property transfer') || 
+        urlPath.toLowerCase().includes('property transfer') || 
+        docName.toLowerCase().includes('property transfer') ? 'propertyTransferAgreement' :
+        
+        title.toLowerCase().includes('technology agreement') || 
+        title.toLowerCase().includes('software agreement') || 
+        urlPath.toLowerCase().includes('technology agreement') || 
+        docName.toLowerCase().includes('technology agreement') ? 'technologyAgreement' :
+        
+        title.toLowerCase().includes('employment contract') || 
+        urlPath.toLowerCase().includes('employment contract') || 
+        docName.toLowerCase().includes('employment contract') ? 'employmentContract' :
+        
+        title.toLowerCase().includes('service provider') || 
+        urlPath.toLowerCase().includes('service provider') || 
+        docName.toLowerCase().includes('service provider') ? 'serviceProviderContract' :
+
         // Trademark related documents
         title.toLowerCase().includes('trademark registration') || 
         urlPath.toLowerCase().includes('trademark registration') || 
@@ -135,11 +206,51 @@ export default function DocumentView() {
         docName.toLowerCase().includes('trademark rectification') ? 'trademarkRectification' :
         
         title.toLowerCase().includes('trademark infringement') || 
-        title.toLowerCase().includes('tm infringement') || 
         urlPath.toLowerCase().includes('trademark infringement') || 
-        urlPath.toLowerCase().includes('tm infringement') || 
-        docName.toLowerCase().includes('trademark infringement') || 
-        docName.toLowerCase().includes('tm infringement') ? 'trademarkInfringementNotice' :
+        docName.toLowerCase().includes('trademark infringement') ? 'tmInfringementNotice' :
+        
+        title.toLowerCase().includes('trademark renewal') || 
+        urlPath.toLowerCase().includes('trademark renewal') || 
+        docName.toLowerCase().includes('trademark renewal') ? 'trademarkRenewal' :
+        
+        title.toLowerCase().includes('trademark transfer') || 
+        urlPath.toLowerCase().includes('trademark transfer') || 
+        docName.toLowerCase().includes('trademark transfer') ? 'trademarkTransfer' :
+        
+        title.toLowerCase().includes('expedited trademark') || 
+        urlPath.toLowerCase().includes('expedited trademark') || 
+        docName.toLowerCase().includes('expedited trademark') ? 'expeditedTmRegistration' :
+        
+        title.toLowerCase().includes('usa trademark') || 
+        urlPath.toLowerCase().includes('usa trademark') || 
+        docName.toLowerCase().includes('usa trademark') ? 'usaTrademarkRegistration' :
+        
+        title.toLowerCase().includes('international trademark') || 
+        urlPath.toLowerCase().includes('international trademark') || 
+        docName.toLowerCase().includes('international trademark') ? 'internationalTrademark' :
+        
+        // Design related documents
+        title.toLowerCase().includes('design registration') || 
+        urlPath.toLowerCase().includes('design registration') || 
+        docName.toLowerCase().includes('design registration') ? 'designRegistration' :
+        
+        title.toLowerCase().includes('design objection') || 
+        urlPath.toLowerCase().includes('design objection') || 
+        docName.toLowerCase().includes('design objection') ? 'designObjection' :
+        
+        // Copyright related documents
+        title.toLowerCase().includes('copyright registration') || 
+        urlPath.toLowerCase().includes('copyright registration') || 
+        docName.toLowerCase().includes('copyright registration') ? 'copyrightRegistration' :
+        
+        title.toLowerCase().includes('copyright objection') || 
+        urlPath.toLowerCase().includes('copyright objection') || 
+        docName.toLowerCase().includes('copyright objection') ? 'copyrightObjection' :
+        
+        // Patent related documents
+        title.toLowerCase().includes('patent registration') || 
+        urlPath.toLowerCase().includes('patent registration') || 
+        docName.toLowerCase().includes('patent registration') ? 'patentRegistration' :
         
         // Insurance related documents
         title.toLowerCase().includes('health insurance') || 
