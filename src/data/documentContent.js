@@ -1645,5 +1645,246 @@ export const documentContent = {
         icon: '⚙️'
       }
     ]
+  },
+  incomeTaxEFiling: {
+    data: [
+      {
+        id: 'intro',
+        title: 'Overview',
+        content: 'Online Income Tax Return Filing is a comprehensive service for accurate and secure filing of income tax returns with expert assistance. Our service ensures compliance while maximizing tax savings through professional guidance.',
+        icon: '💰'
+      },
+      {
+        id: 'types',
+        title: 'Types of Returns',
+        items: [
+          'ITR-1 Sahaj - For salaried individuals with income up to ₹50 lakhs',
+          'ITR-2 - For individuals/HUFs with capital gains',
+          'ITR-3 - For business professionals',
+          'ITR-4 Sugam - For presumptive taxation',
+          'ITR-5 - For firms and LLPs',
+          'ITR-6 - For companies',
+          'ITR-7 - For trusts and societies'
+        ],
+        icon: '📋'
+      },
+      {
+        id: 'documents',
+        title: 'Required Documents',
+        items: [
+          'PAN Card',
+          'Form 16 (for salaried individuals)',
+          'Bank statements',
+          'Investment proofs',
+          'Property documents (if applicable)',
+          'Business financial statements (if applicable)'
+        ],
+        icon: '📂'
+      },
+      {
+        id: 'process',
+        title: 'Filing Process',
+        items: [
+          'Choose appropriate ITR form',
+          'Submit required documents',
+          'Expert review and preparation',
+          'Draft verification by client',
+          'E-filing with IT department',
+          'E-verification of return'
+        ],
+        icon: '⚙️'
+      },
+      {
+        id: 'benefits',
+        title: 'Benefits',
+        items: [
+          'Accurate filing with maximum tax savings',
+          'Avoid penalties and interest charges',
+          'Expert assistance for all taxpayer types',
+          'Timely compliance with tax laws',
+          'Professional handling of complex cases'
+        ],
+        icon: '✅'
+      }
+    ]
+  },
+  businessTaxFiling: {
+    data: [
+      {
+        id: 'intro',
+        title: 'Overview',
+        content: 'Business Tax Filing service provides professional assistance for partnerships, LLPs, companies, and other business entities in filing their income tax returns accurately and timely.',
+        icon: '🏢'
+      },
+      {
+        id: 'eligibility',
+        title: 'Who Can Use',
+        items: [
+          'Partnership firms and LLPs',
+          'Private limited companies',
+          'Public limited companies',
+          'One person companies',
+          'Associations and trusts'
+        ],
+        icon: '✓'
+      },
+      {
+        id: 'documents',
+        title: 'Required Documents',
+        items: [
+          'Business PAN and registration documents',
+          'Financial statements (P&L, Balance Sheet)',
+          'Audit reports (if applicable)',
+          'Bank statements',
+          'Previous year returns',
+          'Tax payment challans'
+        ],
+        icon: '📂'
+      },
+      {
+        id: 'process',
+        title: 'Filing Steps',
+        items: [
+          'Submit business financials and documents',
+          'Determine applicable ITR form',
+          'Tax computation by experts',
+          'Draft review and finalization',
+          'E-filing with digital signature',
+          'Maintain compliance records'
+        ],
+        icon: '⚙️'
+      },
+      {
+        id: 'benefits',
+        title: 'Benefits',
+        items: [
+          'Timely filing to avoid penalties',
+          'Expert tax planning and savings',
+          'Compliance with business regulations',
+          'Professional documentation',
+          'Ongoing expert support'
+        ],
+        icon: '✅'
+      }
+    ]
+  },
+  tdsServices: {
+    data: [
+      {
+        id: 'intro',
+        title: 'Overview',
+        content: 'Comprehensive TDS (Tax Deducted at Source) services including TAN registration, quarterly return filing, and compliance management for businesses and employers.',
+        icon: '📊'
+      },
+      {
+        id: 'services',
+        title: 'Available Services',
+        items: [
+          'TAN Registration',
+          'Quarterly TDS Return Filing',
+          'Form 15CA/CB for Foreign Remittances',
+          'TDS Certificate Generation',
+          'Correction Statement Filing'
+        ],
+        icon: '🔧'
+      },
+      {
+        id: 'documents',
+        title: 'Required Documents',
+        items: [
+          'PAN of the deductor',
+          'Business registration proof',
+          'TDS challan copies',
+          'Deduction statements',
+          'Foreign remittance details (if applicable)',
+          'Digital Signature Certificate'
+        ],
+        icon: '📂'
+      },
+      {
+        id: 'process',
+        title: 'Service Process',
+        items: [
+          'Submit required documents',
+          'Verify deduction details',
+          'Prepare returns (24Q/26Q/27Q)',
+          'Generate Form 16/16A',
+          'File returns online',
+          'Track compliance status'
+        ],
+        icon: '⚙️'
+      },
+      {
+        id: 'benefits',
+        title: 'Benefits',
+        items: [
+          'Timely compliance with TDS regulations',
+          'Avoid late filing penalties',
+          'Professional accuracy in filing',
+          'Digital compliance management',
+          'Expert support for queries'
+        ],
+        icon: '✅'
+      }
+    ]
+  },
+  incomeTaxNotice: {
+    data: [
+      {
+        id: 'intro',
+        title: 'Overview',
+        content: 'Professional assistance in handling and responding to various income tax notices including scrutiny notices, defective return notices, and demand notices.',
+        icon: '⚠️'
+      },
+      {
+        id: 'types',
+        title: 'Types of Notices',
+        items: [
+          'Defective Return Notice (139(9))',
+          'Scrutiny Notice (143(2))',
+          'Demand Notice (156)',
+          'Assessment Order',
+          'Penalty Notice'
+        ],
+        icon: '📋'
+      },
+      {
+        id: 'documents',
+        title: 'Required Documents',
+        items: [
+          'Original notice received',
+          'Income tax returns filed',
+          'Supporting documents mentioned in notice',
+          'Previous correspondence with IT department',
+          'Relevant financial records'
+        ],
+        icon: '📂'
+      },
+      {
+        id: 'process',
+        title: 'Response Process',
+        items: [
+          'Notice analysis by experts',
+          'Document compilation',
+          'Draft response preparation',
+          'Review and finalization',
+          'Submission to IT department',
+          'Follow-up till resolution'
+        ],
+        icon: '⚙️'
+      },
+      {
+        id: 'tips',
+        title: 'Handling Tips',
+        items: [
+          'Respond within deadline',
+          'Maintain proper documentation',
+          'Seek professional help promptly',
+          'Keep communication records',
+          'Follow up regularly'
+        ],
+        icon: '💡'
+      }
+    ]
   }
 }; 

@@ -145,11 +145,70 @@ export default function DocumentView() {
           foundDocType = 'propertyInsuranceClaim';
         }
       }
+      // Check if the document is in the Income Tax section
+      else if (urlPath.includes('/docs/IT/') || docName.toLowerCase().includes('income tax') || docName.toLowerCase().includes('itr')) {
+        if (urlPath.includes('ITR-1') || docName.toLowerCase().includes('itr-1') || docName.toLowerCase().includes('sahaj')) {
+          foundDocType = 'incomeTaxEFiling';
+        } else if (urlPath.includes('ITR-2') || docName.toLowerCase().includes('itr-2')) {
+          foundDocType = 'incomeTaxEFiling';
+        } else if (urlPath.includes('ITR-3') || docName.toLowerCase().includes('itr-3')) {
+          foundDocType = 'incomeTaxEFiling';
+        } else if (urlPath.includes('ITR-4') || docName.toLowerCase().includes('itr-4') || docName.toLowerCase().includes('sugam')) {
+          foundDocType = 'incomeTaxEFiling';
+        } else if (urlPath.includes('ITR-5') || docName.toLowerCase().includes('itr-5')) {
+          foundDocType = 'businessTaxFiling';
+        } else if (urlPath.includes('ITR-6') || docName.toLowerCase().includes('itr-6')) {
+          foundDocType = 'businessTaxFiling';
+        } else if (urlPath.includes('ITR-7') || docName.toLowerCase().includes('itr-7')) {
+          foundDocType = 'businessTaxFiling';
+        } else if (urlPath.includes('Business') || docName.toLowerCase().includes('business tax')) {
+          foundDocType = 'businessTaxFiling';
+        } else if ((urlPath.includes('15CA') && urlPath.includes('15CB')) || 
+                   (docName.toLowerCase().includes('15ca') && docName.toLowerCase().includes('15cb'))) {
+          foundDocType = 'tdsServices';
+        } else if (urlPath.includes('TAN') || docName.toLowerCase().includes('tan registration')) {
+          foundDocType = 'tdsServices';
+        } else if (urlPath.includes('TDS') || docName.toLowerCase().includes('tds')) {
+          foundDocType = 'tdsServices';
+        } else if (urlPath.includes('Notice') || docName.toLowerCase().includes('notice')) {
+          foundDocType = 'incomeTaxNotice';
+        } else {
+          // Default to general income tax e-filing if no specific type is matched
+          foundDocType = 'incomeTaxEFiling';
+        }
+      }
     }
     
     // If still not found, use keyword matching
     if (!foundDocType) {
       foundDocType = 
+        // Income Tax related documents
+        title.toLowerCase().includes('itr-1') || title.toLowerCase().includes('sahaj') ? 'incomeTaxEFiling' :
+        title.toLowerCase().includes('itr-2') ? 'incomeTaxEFiling' :
+        title.toLowerCase().includes('itr-3') ? 'incomeTaxEFiling' :
+        title.toLowerCase().includes('itr-4') || title.toLowerCase().includes('sugam') ? 'incomeTaxEFiling' :
+        title.toLowerCase().includes('itr-5') ? 'businessTaxFiling' :
+        title.toLowerCase().includes('itr-6') ? 'businessTaxFiling' :
+        title.toLowerCase().includes('itr-7') ? 'businessTaxFiling' :
+        
+        title.toLowerCase().includes('income tax filing') || 
+        urlPath.toLowerCase().includes('income tax filing') || 
+        docName.toLowerCase().includes('income tax filing') ? 'incomeTaxEFiling' :
+        
+        title.toLowerCase().includes('business tax') || 
+        urlPath.toLowerCase().includes('business tax') || 
+        docName.toLowerCase().includes('business tax') ? 'businessTaxFiling' :
+        
+        (title.toLowerCase().includes('15ca') && title.toLowerCase().includes('15cb')) ||
+        title.toLowerCase().includes('tan registration') ||
+        title.toLowerCase().includes('tds service') || 
+        urlPath.toLowerCase().includes('tds service') || 
+        docName.toLowerCase().includes('tds service') ? 'tdsServices' :
+        
+        title.toLowerCase().includes('income tax notice') || 
+        urlPath.toLowerCase().includes('income tax notice') || 
+        docName.toLowerCase().includes('income tax notice') ? 'incomeTaxNotice' :
+        
         // Agreement related documents
         title.toLowerCase().includes('business agreement') || 
         urlPath.toLowerCase().includes('business agreement') || 
